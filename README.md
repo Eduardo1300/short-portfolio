@@ -1,32 +1,31 @@
-# 💼 Portafolio Profesional – Christopher Valdivia
+# Portafolio – Christopher Valdivia
 
-Este es mi portafolio web corto, diseñado como una **landing page sin scroll**, con todo mi perfil profesional en una sola vista. Ideal para reclutadores que buscan conocer rápidamente mis habilidades, proyectos y datos de contacto.
+Landing de una sola pantalla (sin scroll) construida con React + TypeScript + Vite + Tailwind.
 
-## 📄 Características
+## Requisitos
+- Node.js 18+
 
-- Diseño compacto y moderno (estilo tarjeta de presentación)
-- Sin scroll: todo visible en una sola pantalla
-- Responsive (adaptable a dispositivos móviles)
-- Enlace directo a:
-  - GitHub
-  - LinkedIn
-  - Descargar CV
-- Tecnologías principales organizadas por stack
-- Proyectos destacados con botón a demo y código
-
-## 🛠️ Tecnologías usadas
-
-- **Frontend:** React, TypeScript, Tailwind CSS
-- **Backend (en proyectos):** NestJS, Node.js, PostgreSQL
-- **DevOps:** Docker, Git, GitHub Actions
-
-## 🚀 Cómo iniciar el proyecto
-
+## Desarrollo
 ```bash
 npm install
 npm run dev
-📫 Contacto
-Christopher Eduardo Valdivia Baca
-📍 Lima, Perú
-📧 eduardovaldivia130@outlook.es
-📞 +51 953 587 619
+```
+
+## Build de producción
+```bash
+npm run build
+npm run preview
+```
+
+## Tecnologías
+- React 18, TypeScript, Vite 5
+- Tailwind CSS 3
+- i18n simple (ES/EN)
+- Toggle de tema (Dark/Light)
+
+## Estructura
+- `src/components`: Hero, Technologies, Projects, Experience, About, Contact
+- `src/i18n.ts`: diccionario ES/EN
+
+## Despliegue
+Sube la carpeta `dist` generada por `npm run build` a tu hosting favorito o GitHub Pages.
