@@ -5,12 +5,19 @@
 @layer base {
   html, body, #root { height: 100%; }
   html, body { overflow: hidden; }
-  body { @apply antialiased bg-[#0b0f14] text-slate-200; }
+  body { @apply antialiased transition-colors duration-200; }
+  .dark body { @apply bg-[#0b0f14] text-slate-200; }
+  .light body { @apply bg-[#f6f7fb] text-slate-800; }
 }
 
 /* Subtle radial background */
-.bg-grid {
+.bg-grid-dark {
   background-image:
     radial-gradient(1200px 600px at -10% -10%, rgba(19,184,170,0.12), transparent),
     radial-gradient(900px 500px at 110% 110%, rgba(17,149,141,0.10), transparent);
+}
+.bg-grid-light {
+  background-image:
+    radial-gradient(1200px 600px at -10% -10%, rgba(19, 184, 170, 0.14), transparent),
+    radial-gradient(900px 500px at 110% 110%, rgba(0, 0, 0, 0.06), transparent);
 }
