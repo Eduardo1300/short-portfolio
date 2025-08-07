@@ -1,4 +1,5 @@
 import React from 'react'
+import { dictionary, Locale } from '../i18n'
 
 const ProjectCard: React.FC<{ title: string; stack: string; repo: string; demo: string }> = ({ title, stack, repo, demo }) => (
   <article className="group rounded-xl border border-white/10 bg-white/[0.04] p-4 shadow-sm flex flex-col">
@@ -27,26 +28,24 @@ const ProjectCard: React.FC<{ title: string; stack: string; repo: string; demo: 
   </article>
 )
 
-const Projects: React.FC = () => {
+const Projects: React.FC<{ locale: Locale }> = ({ locale }) => {
+  const t = dictionary[locale]
   return (
     <section className="rounded-xl border border-white/10 bg-white/[0.04] p-4 shadow-sm h-full grid grid-rows-[auto,1fr]">
       <div className="flex items-center justify-between">
-        <h2 className="text-[clamp(13px,1.2vw,16px)] font-semibold text-slate-100 tracking-wide">Proyectos</h2>
+        <h2 className="text-[clamp(13px,1.2vw,16px)] font-semibold text-slate-100 tracking-wide">{t.projects}</h2>
         <div className="h-px w-1/2 bg-gradient-to-r from-white/20 to-transparent" />
       </div>
       <div className="mt-3 grid grid-cols-2 gap-4">
-        <ProjectCard
-          title="Tienda Online Full Stack"
-          stack="React + NestJS + Stripe"
-          repo="https://github.com/"
-          demo="https://example.com"
-        />
-        <ProjectCard
-          title="Buscador de Criaturas RPG"
-          stack="React + API REST"
-          repo="https://github.com/"
-          demo="https://example.com"
-        />
+        {t.projectsList.map((p) => (
+          <ProjectCard
+            key={p.title}
+            title={p.title}
+            stack={p.stack}
+            repo="https://github.com/"
+            demo="https://example.com"
+          />
+        ))}
       </div>
     </section>
   )
