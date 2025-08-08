@@ -5,6 +5,7 @@ import Projects from './components/Projects'
 import About from './components/About'
 import Contact from './components/Contact'
 import Experience from './components/Experience'
+import Profile from './components/Profile'
 import { Locale } from './i18n'
 import { FiMoon, FiSun, FiGlobe } from 'react-icons/fi'
 
@@ -60,9 +61,12 @@ function App() {
             <Hero locale={locale} />
             <Technologies locale={locale} />
           </div>
-          <div className="col-span-2 grid grid-rows-4 gap-4">
+          <div className="col-span-2 grid grid-rows-5 gap-4">
             <div className="row-span-2 animate-fadeInUp">
               <Projects locale={locale} />
+            </div>
+            <div className="row-span-1 animate-fadeInUp">
+              <Profile locale={locale} />
             </div>
             <div className="row-span-1 animate-fadeInUp">
               <Experience locale={locale} />

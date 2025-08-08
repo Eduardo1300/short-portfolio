@@ -16,11 +16,29 @@ export const dictionary = {
     downloadCv: 'Descargar CV',
     availability: 'Disponibilidad para prácticas y proyectos freelance',
     projectsList: [
-      { title: 'Tienda Online Full Stack', stack: 'React + NestJS + Stripe' },
-      { title: 'Buscador de Criaturas RPG', stack: 'React + API REST' }
+      { 
+        title: 'Tienda Online Full Stack', 
+        stack: 'React + NestJS + Stripe',
+        description: 'E-commerce completo con pagos en línea que resuelve la gestión de productos y transacciones seguras',
+        image: 'https://via.placeholder.com/300x200/4f46e5/ffffff?text=E-commerce',
+        github: 'https://github.com/Eduardo1300/ecommerce-fullstack',
+        demo: 'https://ecommerce-demo.vercel.app'
+      },
+      { 
+        title: 'Buscador de Criaturas RPG', 
+        stack: 'React + API REST',
+        description: 'App que facilita encontrar información detallada de criaturas para juegos de rol usando APIs',
+        image: 'https://via.placeholder.com/300x200/059669/ffffff?text=RPG+Finder',
+        github: 'https://github.com/Eduardo1300/rpg-creatures',
+        demo: 'https://rpg-creatures.netlify.app'
+      }
     ],
     aboutText:
-      'Apasionado por el desarrollo web moderno, escribo código limpio y funcional. Me enfoco en crear soluciones útiles con buen diseño y estructura escalable.',
+      'Apasionado por el desarrollo web moderno y la creación de soluciones digitales innovadoras. Me motiva resolver problemas complejos con código limpio y arquitecturas escalables. Busco oportunidades para crecer en equipos dinámicos trabajando en proyectos que generen impacto real en los usuarios.',
+    profileSection: {
+      title: 'Perfil Profesional',
+      content: 'Desarrollador Full Stack Junior con sólida base en tecnologías modernas. Combino creatividad técnica con enfoque en la experiencia del usuario. Siempre dispuesto a aprender nuevas tecnologías y metodologías para crear soluciones web robustas y escalables.'
+    },
     contactLabelEmail: '📧',
     contactLabelPhone: '📞',
     contactLabelLocation: '📍',
@@ -50,9 +68,21 @@ export const dictionary = {
       backend: 'Backend',
       devops: 'DevOps & Tools',
       items: {
-        frontend: ['React ⚛️', 'TypeScript 🟦', 'Tailwind CSS 🎨'],
-        backend: ['Node.js 🌐', 'NestJS 🛠️', 'PostgreSQL 🐘'],
-        devops: ['Docker 🐳', 'Git/GitHub 🔁', 'CI/CD (GitHub Actions) 🚀']
+        frontend: [
+          { name: 'React ⚛️', level: 'Avanzado' },
+          { name: 'TypeScript 🟦', level: 'Intermedio' },
+          { name: 'Tailwind CSS 🎨', level: 'Avanzado' }
+        ],
+        backend: [
+          { name: 'Node.js 🌐', level: 'Intermedio' },
+          { name: 'NestJS 🛠️', level: 'Intermedio' },
+          { name: 'PostgreSQL 🐘', level: 'Básico' }
+        ],
+        devops: [
+          { name: 'Docker 🐳', level: 'Básico' },
+          { name: 'Git/GitHub 🔁', level: 'Avanzado' },
+          { name: 'CI/CD (GitHub Actions) 🚀', level: 'Básico' }
+        ]
       }
     },
     toggleTheme: 'Modo',
@@ -73,11 +103,29 @@ export const dictionary = {
     downloadCv: 'Download CV',
     availability: 'Available for internships and freelance projects',
     projectsList: [
-      { title: 'Full Stack Online Store', stack: 'React + NestJS + Stripe' },
-      { title: 'RPG Creatures Finder', stack: 'React + REST API' }
+      { 
+        title: 'Full Stack Online Store', 
+        stack: 'React + NestJS + Stripe',
+        description: 'Complete e-commerce with online payments that solves product management and secure transactions',
+        image: 'https://via.placeholder.com/300x200/4f46e5/ffffff?text=E-commerce',
+        github: 'https://github.com/Eduardo1300/ecommerce-fullstack',
+        demo: 'https://ecommerce-demo.vercel.app'
+      },
+      { 
+        title: 'RPG Creatures Finder', 
+        stack: 'React + REST API',
+        description: 'App that makes it easy to find detailed creature information for role-playing games using APIs',
+        image: 'https://via.placeholder.com/300x200/059669/ffffff?text=RPG+Finder',
+        github: 'https://github.com/Eduardo1300/rpg-creatures',
+        demo: 'https://rpg-creatures.netlify.app'
+      }
     ],
     aboutText:
-      'Passionate about modern web development, I write clean and functional code. I focus on building useful solutions with good design and scalable structure.',
+      'Passionate about modern web development and creating innovative digital solutions. I\'m motivated by solving complex problems with clean code and scalable architectures. I seek opportunities to grow in dynamic teams working on projects that generate real impact for users.',
+    profileSection: {
+      title: 'Professional Profile',
+      content: 'Full Stack Junior Developer with solid foundation in modern technologies. I combine technical creativity with user experience focus. Always willing to learn new technologies and methodologies to create robust and scalable web solutions.'
+    },
     contactLabelEmail: '📧',
     contactLabelPhone: '📞',
     contactLabelLocation: '📍',
@@ -107,9 +155,21 @@ export const dictionary = {
       backend: 'Backend',
       devops: 'DevOps & Tools',
       items: {
-        frontend: ['React ⚛️', 'TypeScript 🟦', 'Tailwind CSS 🎨'],
-        backend: ['Node.js 🌐', 'NestJS 🛠️', 'PostgreSQL 🐘'],
-        devops: ['Docker 🐳', 'Git/GitHub 🔁', 'CI/CD (GitHub Actions) 🚀']
+        frontend: [
+          { name: 'React ⚛️', level: 'Advanced' },
+          { name: 'TypeScript 🟦', level: 'Intermediate' },
+          { name: 'Tailwind CSS 🎨', level: 'Advanced' }
+        ],
+        backend: [
+          { name: 'Node.js 🌐', level: 'Intermediate' },
+          { name: 'NestJS 🛠️', level: 'Intermediate' },
+          { name: 'PostgreSQL 🐘', level: 'Basic' }
+        ],
+        devops: [
+          { name: 'Docker 🐳', level: 'Basic' },
+          { name: 'Git/GitHub 🔁', level: 'Advanced' },
+          { name: 'CI/CD (GitHub Actions) 🚀', level: 'Basic' }
+        ]
       }
     },
     toggleTheme: 'Theme',
