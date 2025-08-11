@@ -7,7 +7,7 @@ export const dictionary = {
     about: 'Sobre mí',
     contact: 'Contacto',
     role: 'Desarrollador Full Stack Junior',
-    education: 'Estudiante de Computación e Informática (5to ciclo)',
+    education: 'Estudiante de Computación e Informática (6to ciclo)',
     location: 'Lima, Perú',
     phone: '+51 953 587 619',
     email: 'eduardovaldivia130@outlook.es',
@@ -19,18 +19,18 @@ export const dictionary = {
       { 
         title: 'Tienda Online Full Stack', 
         stack: 'React + NestJS + Stripe',
-        description: 'E-commerce completo con pagos en línea que resuelve la gestión de productos y transacciones seguras',
-        image: 'https://via.placeholder.com/300x200/4f46e5/ffffff?text=E-commerce',
-        github: 'https://github.com/Eduardo1300/ecommerce-fullstack',
-        demo: 'https://ecommerce-demo.vercel.app'
+        description: 'Sistema completo de tienda. Incluye autenticación segura con JWT, gestión de productos, carrito de compras persistente y control de órdenes, todo construido con arquitectura moderna y diseño responsive usando TailwindCSS.',
+        image: '/images/tienda.png',
+        github: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
+        demo: ''
       },
       { 
-        title: 'Buscador de Criaturas RPG', 
-        stack: 'React + API REST',
-        description: 'App que facilita encontrar información detallada de criaturas para juegos de rol usando APIs',
-        image: 'https://via.placeholder.com/300x200/059669/ffffff?text=RPG+Finder',
-        github: 'https://github.com/Eduardo1300/rpg-creatures',
-        demo: 'https://rpg-creatures.netlify.app'
+        title: 'TaskFlow', 
+        stack: 'React + TypeScript + Supabase',
+        description: 'Aplicación empresarial de gestión de tareas con IA integrada, colaboración en tiempo real y múltiples integraciones. Ofrece funcionalidades avanzadas como sugerencias inteligentes, sincronización offline, control granular de permisos, API REST completa y análisis detallados para maximizar la productividad.',
+        image: '/images/taskflow1.png',
+        github: 'https://github.com/Eduardo1300/taskflow-app',
+        demo: 'https://taskflow-app-xi.vercel.app/'
       }
     ],
     aboutText:
@@ -94,7 +94,7 @@ export const dictionary = {
     about: 'About',
     contact: 'Contact',
     role: 'Full Stack Junior Developer',
-    education: 'Computer Science and Information Technology Student (5th cycle)',
+    education: 'Computer Science and Information Technology Student (6th cycle)',
     location: 'Lima, Peru',
     phone: '+51 953 587 619',
     email: 'eduardovaldivia130@outlook.es',
@@ -105,19 +105,19 @@ export const dictionary = {
     projectsList: [
       { 
         title: 'Full Stack Online Store', 
-        stack: 'React + NestJS + Stripe',
-        description: 'Complete e-commerce with online payments that solves product management and secure transactions',
-        image: 'https://via.placeholder.com/300x200/4f46e5/ffffff?text=E-commerce',
-        github: 'https://github.com/Eduardo1300/ecommerce-fullstack',
-        demo: 'https://ecommerce-demo.vercel.app'
+        stack: 'React + NestJS + PostgreSQL',
+        description: 'Complete store system. Includes secure JWT authentication, product management, persistent shopping cart, and order control—all built with a modern architecture and responsive design using TailwindCSS.',
+        image: '/images/tienda.png',
+        github: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
+        demo: ''
       },
       { 
-        title: 'RPG Creatures Finder', 
-        stack: 'React + REST API',
-        description: 'App that makes it easy to find detailed creature information for role-playing games using APIs',
-        image: 'https://via.placeholder.com/300x200/059669/ffffff?text=RPG+Finder',
-        github: 'https://github.com/Eduardo1300/rpg-creatures',
-        demo: 'https://rpg-creatures.netlify.app'
+        title: 'TaskFlow', 
+        stack: 'React + TypeScript + Supabase',
+        description: 'Enterprise-grade task management application with integrated AI, real-time collaboration, and multiple integrations. It offers advanced features such as smart suggestions, offline sync, granular permission control, a full REST API, and detailed analytics to maximize productivity.',
+        image: '/images/taskflow1.png',
+        github: 'https://github.com/Eduardo1300/taskflow-app',
+        demo: 'https://taskflow-app-xi.vercel.app/'
       }
     ],
     aboutText:
