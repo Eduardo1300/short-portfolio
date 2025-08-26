@@ -1,79 +1,82 @@
 import React from 'react'
 import { dictionary, Locale } from '../i18n'
-import { FiCpu } from 'react-icons/fi'
-
-const SkillBadge: React.FC<{ name: string; level: string }> = ({ name, level }) => {
-  const levelColors = {
-    'Avanzado': 'border-emerald-500/30 bg-emerald-500/10 text-emerald-300',
-    'Advanced': 'border-emerald-500/30 bg-emerald-500/10 text-emerald-300',
-    'Intermedio': 'border-amber-500/30 bg-amber-500/10 text-amber-300',
-    'Intermediate': 'border-amber-500/30 bg-amber-500/10 text-amber-300',
-    'Básico': 'border-blue-500/30 bg-blue-500/10 text-blue-300',
-    'Basic': 'border-blue-500/30 bg-blue-500/10 text-blue-300'
-  }
-
-  const levelColorsLight = {
-    'Avanzado': 'border-emerald-500/50 bg-emerald-50 text-emerald-700',
-    'Advanced': 'border-emerald-500/50 bg-emerald-50 text-emerald-700',
-    'Intermedio': 'border-amber-500/50 bg-amber-50 text-amber-700',
-    'Intermediate': 'border-amber-500/50 bg-amber-50 text-amber-700',
-    'Básico': 'border-blue-500/50 bg-blue-50 text-blue-700',
-    'Basic': 'border-blue-500/50 bg-blue-50 text-blue-700'
-  }
-
-  const darkColorClass = levelColors[level as keyof typeof levelColors] || levelColors['Básico']
-  const lightColorClass = levelColorsLight[level as keyof typeof levelColorsLight] || levelColorsLight['Básico']
-
-  return (
-    <div className="group relative">
-      <span className={`px-2 py-1 rounded-md border text-[clamp(9px,0.95vw,12px)] hover:scale-105 transition-all duration-200 cursor-default
-        dark:${darkColorClass} dark:bg-white/[0.06] dark:text-slate-200
-        light:${lightColorClass}`}>
-        {name}
-      </span>
-      {/* Tooltip con nivel */}
-      <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap z-10">
-        {level}
-      </div>
-    </div>
-  )
-}
+import { FaCode, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa'
 
 const Technologies: React.FC<{ locale: Locale }> = ({ locale }) => {
   const t = dictionary[locale].technologiesGrouped
+  
   return (
-    <section className="card-bg rounded-xl border p-4 shadow-sm">
-      <div className="flex items-center gap-2 text-secondary">
-        <FiCpu className="opacity-80" />
-        <h2 className="text-[clamp(11px,1vw,13px)] font-semibold uppercase tracking-wider">{t.title}</h2>
+    <div className="mt-8 space-y-8">
+      <div className="glass-card rounded-2xl p-6">
+        <h3 className="flex items-center gap-2 mb-6 text-cyan-400 font-semibold text-lg">
+          <FaCode />
+          {t.title}
+        </h3>
+        
+        <div className="space-y-6">
+          {/* Frontend */}
+          <div>
+            <h4 className="text-gray-400 text-sm mb-3">{t.frontend}</h4>
+            <div className="flex flex-wrap gap-2">
+              {t.items.frontend.map((item) => (
+                <span key={item.name} className="tech-tag text-cyan-400 px-3 py-2 rounded-xl text-sm font-medium">
+                  {item.name}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Backend */}
+          <div>
+            <h4 className="text-gray-400 text-sm mb-3">{t.backend}</h4>
+            <div className="flex flex-wrap gap-2">
+              {t.items.backend.map((item) => (
+                <span key={item.name} className="tech-tag text-cyan-400 px-3 py-2 rounded-xl text-sm font-medium">
+                  {item.name}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* DevOps & Tools */}
+          <div>
+            <h4 className="text-gray-400 text-sm mb-3">{t.devops}</h4>
+            <div className="flex flex-wrap gap-2">
+              {t.items.devops.map((item) => (
+                <span key={item.name} className="tech-tag text-cyan-400 px-3 py-2 rounded-xl text-sm font-medium">
+                  {item.name}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="mt-2 grid grid-cols-1 gap-2">
-        <div>
-          <h3 className="text-[clamp(10px,0.95vw,12px)] text-muted">{t.frontend}</h3>
-          <div className="mt-1 flex flex-wrap gap-1.5">
-            {t.items.frontend.map((item) => (
-              <SkillBadge key={item.name} name={item.name} level={item.level} />
-            ))}
+
+      {/* Contact Info */}
+      <div className="glass-card rounded-2xl p-6">
+        <h3 className="text-cyan-400 font-semibold text-lg mb-4">
+          {dictionary[locale].contact}
+        </h3>
+        <div className="space-y-3">
+          <div className="contact-item flex items-center gap-3 p-2 rounded-lg">
+            <FaMapMarkerAlt className="text-cyan-400 w-5" />
+            <span className="text-gray-300">{dictionary[locale].location}</span>
           </div>
-        </div>
-        <div>
-          <h3 className="text-[clamp(10px,0.95vw,12px)] text-muted">{t.backend}</h3>
-          <div className="mt-1 flex flex-wrap gap-1.5">
-            {t.items.backend.map((item) => (
-              <SkillBadge key={item.name} name={item.name} level={item.level} />
-            ))}
+          <div className="contact-item flex items-center gap-3 p-2 rounded-lg">
+            <FaPhone className="text-cyan-400 w-5" />
+            <a href="tel:+51953687619" className="text-gray-300 hover:text-cyan-400 transition-colors">
+              {dictionary[locale].phone}
+            </a>
           </div>
-        </div>
-        <div>
-          <h3 className="text-[clamp(10px,0.95vw,12px)] text-muted">{t.devops}</h3>
-          <div className="mt-1 flex flex-wrap gap-1.5">
-            {t.items.devops.map((item) => (
-              <SkillBadge key={item.name} name={item.name} level={item.level} />
-            ))}
+          <div className="contact-item flex items-center gap-3 p-2 rounded-lg">
+            <FaEnvelope className="text-cyan-400 w-5" />
+            <a href="mailto:eduardovaldivia300@gmail.com" className="text-gray-300 hover:text-cyan-400 transition-colors">
+              {dictionary[locale].email}
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

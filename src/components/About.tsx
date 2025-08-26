@@ -4,12 +4,12 @@ import { dictionary, Locale } from '../i18n'
 const About: React.FC<{ locale: Locale }> = ({ locale }) => {
   const t = dictionary[locale]
   return (
-    <article className="card-bg rounded-xl border p-4 shadow-sm h-full">
-      <h2 className="text-[clamp(12px,1.1vw,15px)] font-semibold text-primary">{t.about}</h2>
-      <p className="mt-1 text-[clamp(10px,1vw,13px)] text-secondary leading-snug">
+    <div className="glass-card rounded-2xl p-6 h-full">
+      <h2 className="text-xl font-semibold text-cyan-400 mb-4">{t.about}</h2>
+      <p className="text-gray-300 leading-relaxed">
         {t.aboutText}
       </p>
-    </article>
+    </div>
   )
 }
 

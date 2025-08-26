@@ -1,25 +1,30 @@
 import React from 'react'
 import { dictionary, Locale } from '../i18n'
+import { FaBriefcase } from 'react-icons/fa'
 
 const Experience: React.FC<{ locale: Locale }> = ({ locale }) => {
   const t = dictionary[locale]
   return (
-    <section className="card-bg rounded-xl border p-4 shadow-sm h-full grid grid-rows-[auto,1fr]">
-      <div className="flex items-center justify-between">
-        <h2 className="text-[clamp(13px,1.2vw,16px)] font-semibold text-primary tracking-wide">{t.experiences}</h2>
-        <div className="divider-gradient h-px w-1/2" />
-      </div>
-      <div className="mt-3 grid grid-cols-2 gap-4">
+    <section className="mb-12">
+      <h2 className="section-title flex items-center gap-4 text-4xl font-bold mb-8 after:content-[''] after:flex-1 after:h-0.5">
+        <FaBriefcase />
+        {t.experiences}
+      </h2>
+      
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {t.experienceItems.map((exp) => (
-          <article key={exp.title} className="card-bg rounded-lg border p-3">
-            <h3 className="text-[clamp(12px,1.1vw,15px)] font-semibold text-primary">{exp.title}</h3>
-            <p className="text-[clamp(10px,1vw,12px)] text-secondary">{exp.period}</p>
-            <ul className="mt-2 space-y-1 text-[clamp(10px,1vw,12px)] text-secondary list-disc list-inside">
-              {exp.bullets.map((b) => (
-                <li key={b}>{b}</li>
+          <div key={exp.title} className="glass-card rounded-2xl p-6 glass-card-hover">
+            <h3 className="text-xl font-semibold text-cyan-400 mb-2">{exp.title}</h3>
+            <p className="text-gray-400 text-sm mb-4">{exp.period}</p>
+            <ul className="space-y-2 text-gray-300">
+              {exp.bullets.map((bullet, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <span className="text-cyan-400 mt-1">•</span>
+                  <span>{bullet}</span>
+                </li>
               ))}
             </ul>
-          </article>
+          </div>
         ))}
       </div>
     </section>

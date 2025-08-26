@@ -1,17 +1,37 @@
 import React from 'react'
 import { dictionary, Locale } from '../i18n'
+import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 
 const Contact: React.FC<{ locale: Locale }> = ({ locale }) => {
   const t = dictionary[locale]
   return (
-    <aside className="card-bg rounded-xl border p-4 shadow-sm h-full">
-      <h2 className="text-[clamp(12px,1.1vw,15px)] font-semibold text-primary">{t.contact}</h2>
-      <ul className="mt-2 space-y-1 text-[clamp(10px,1vw,13px)] text-secondary">
-        <li className="flex items-center gap-2"><span className="text-muted">{t.contactLabelEmail}</span><a className="hover:text-brand-300" href={`mailto:${t.email}`}>{t.email}</a></li>
-        <li className="flex items-center gap-2"><span className="text-muted">{t.contactLabelPhone}</span><a className="hover:text-brand-300" href="tel:+51953587619">{t.phone}</a></li>
-        <li className="flex items-center gap-2"><span className="text-muted">{t.contactLabelLocation}</span>{t.location}</li>
-      </ul>
-    </aside>
+    <div className="glass-card rounded-2xl p-6 h-full">
+      <h2 className="text-xl font-semibold text-cyan-400 mb-4">{t.contact}</h2>
+      <div className="space-y-4">
+        <div className="contact-item flex items-center gap-3 p-2 rounded-lg">
+          <FaEnvelope className="text-cyan-400 w-4" />
+          <a 
+            href={`mailto:${t.email}`} 
+            className="text-gray-300 hover:text-cyan-400 transition-colors text-sm"
+          >
+            {t.email}
+          </a>
+        </div>
+        <div className="contact-item flex items-center gap-3 p-2 rounded-lg">
+          <FaPhone className="text-cyan-400 w-4" />
+          <a 
+            href="tel:+51953687619" 
+            className="text-gray-300 hover:text-cyan-400 transition-colors text-sm"
+          >
+            {t.phone}
+          </a>
+        </div>
+        <div className="contact-item flex items-center gap-3 p-2 rounded-lg">
+          <FaMapMarkerAlt className="text-cyan-400 w-4" />
+          <span className="text-gray-300 text-sm">{t.location}</span>
+        </div>
+      </div>
+    </div>
   )
 }
 
