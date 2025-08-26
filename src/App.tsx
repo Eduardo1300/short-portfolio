@@ -60,7 +60,7 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-sans overflow-x-hidden">
+    <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-sans">
       {/* Partículas de fondo */}
       <div className="particles fixed top-0 left-0 w-full h-full -z-10"></div>
 
@@ -86,7 +86,7 @@ function App() {
         </nav>
       </header>
 
-      <div className="max-w-7xl mx-auto pt-24 px-8 pb-8 grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-12 min-h-screen">
+      <div className="max-w-7xl mx-auto pt-24 px-8 pb-8 grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-12">
         {/* Sidebar */}
         <aside className="lg:sticky lg:top-32 h-fit">
           <Hero locale={locale} />
