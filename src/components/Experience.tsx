@@ -12,8 +12,15 @@ const Experience: React.FC<{ locale: Locale }> = ({ locale }) => {
       </h2>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {t.experienceItems.map((exp) => (
-          <div key={exp.title} className="glass-card rounded-2xl p-6 glass-card-hover">
+        {t.experienceItems.map((exp, idx) => (
+          <div
+            key={exp.title}
+            className={
+              `glass-card rounded-2xl p-6 glass-card-hover${
+                idx === t.experienceItems.length - 1 ? ' col-span-2' : ''
+              }`
+            }
+          >
             <h3 className="text-xl font-semibold text-cyan-400 mb-2">{exp.title}</h3>
             <p className="text-gray-400 text-sm mb-4">{exp.period}</p>
             <ul className="space-y-2 text-gray-300">

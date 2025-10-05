@@ -18,11 +18,11 @@ export const dictionary = {
     projectsList: [
       { 
         title: 'Tienda Online Full Stack', 
-        stack: 'React + NestJS + Stripe',
-        description: 'Sistema completo de tienda. Incluye autenticación segura con JWT, gestión de productos, carrito de compras persistente y control de órdenes, todo construido con arquitectura moderna y diseño responsive usando TailwindCSS.',
+        stack: 'React + NestJS + PostgreSQL',
+        description: 'Sistema completo de tienda. Incluye autenticación segura con JWT, gestión de productos, carrito de compras persistente y control de órdenes, todo construido con arquitectura moderna y diseño responsive usando TailwindCSS. PROYECTO EN DESARROLLO.',
         image: '/images/tienda.png',
         github: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
-        demo: ''
+        demo: 'https://proyecto-tienda-ropa.vercel.app/'
       },
       { 
         title: 'TaskFlow', 
@@ -45,38 +45,63 @@ export const dictionary = {
     experiences: 'Experiencia',
     experienceItems: [
       {
-        title: 'Web Developer Intern – DevDatep Consulting',
+        title: 'Practicante de Desarrollo Web – DevDatep Consulting',
         period: 'Junio 2025 – Actualidad',
         bullets: [
-          'Automatización de procesos low-code (Scriptcase)',
-          'Diseño de interfaces y conexión con bases de datos',
-          'Trabajo bajo metodología Scrum'
+          'Contribuí al desarrollo de apps internas con MySQL.',
+          'Apoyé en el diseño de interfaces y automatización de procesos.',
+          'Mejoré módulos y reportes para mayor eficiencia.',
+          'Participé en equipos ágiles aplicando Scrum.'
         ]
       },
       {
-        title: 'Web Design Intern – LicitApp',
+        title: 'Practicante de Diseño Web – LicitApp',
         period: 'Junio 2025 – Actualidad',
         bullets: [
-          'Personalización de sitios WordPress con HTML/CSS',
-          'Mejoras UX/UI y diseño responsivo'
+         'Personalicé sitios WordPress con HTML, CSS y JS.',
+         'Optimicé el rendimiento visual y diseño responsivo.',
+         'Mejoré la experiencia de usuario y propuestas de UI.',
+         'Colaboré con el equipo de diseño y desarrollo.'
+        ]
+      },
+      {
+  title: 'Practicante de Desarrollo Web jr – NHL Decoracion Comercial',
+        period: 'Sept. 2025 – Actualidad',
+        bullets: [
+          'Mejoré apps web con React.js, Tailwind CSS y Laravel.',
+          'Optimicé código y funcionalidad en plataformas web.',
+          'Implementé nuevas funciones y mejoras UX.',
+          'Creé APIs RESTful e integré bases MySQL.',
+          'Usé Git y GitHub para control de versiones.'
         ]
       }
     ],
     technologiesGrouped: {
-      title: 'Tecnologías',
-      frontend: 'Frontend',
-      backend: 'Backend',
-      devops: 'DevOps & Tools',
-      items: {
+  title: 'Tecnologías',
+  frontend: 'Frontend',
+  backend: 'Backend',
+  database: 'Base de datos',
+  devops: 'DevOps & Tools',
+  items: {
         frontend: [
           { name: 'React ⚛️', level: 'Avanzado' },
+          { name: 'Angular 🅰️', level: 'Básico' },
+          { name: 'Next.js ⏭️', level: 'Básico' },
           { name: 'TypeScript 🟦', level: 'Intermedio' },
           { name: 'Tailwind CSS 🎨', level: 'Avanzado' }
         ],
         backend: [
           { name: 'Node.js 🌐', level: 'Intermedio' },
           { name: 'NestJS 🛠️', level: 'Intermedio' },
-          { name: 'PostgreSQL 🐘', level: 'Básico' }
+          { name: 'Laravel 🔴', level: 'Intermedio' },
+          { name: 'Java ☕', level: 'Básico' },
+          { name: 'PHP 🐘', level: 'Básico' }
+        ],
+        database: [
+          { name: 'MySQL 🟦', level: 'Básico' },
+          { name: 'PostgreSQL 🐘', level: 'Básico' },
+          { name: 'SQL Server 🟥', level: 'Básico' },
+          { name: 'MariaDB 🟨', level: 'Básico' }
         ],
         devops: [
           { name: 'Docker 🐳', level: 'Básico' },
@@ -132,38 +157,63 @@ export const dictionary = {
     experiences: 'Experience',
     experienceItems: [
       {
-        title: 'Web Developer Intern – DevDatep Consulting',
+        title: 'Web Development Intern – DevDatep Consulting',
         period: 'June 2025 – Present',
         bullets: [
-          'Low-code process automation (Scriptcase)',
-          'Interface design and database connections',
-          'Scrum methodology'
+          'Contributed to internal app development with MySQL.',
+          'Supported UI design and process automation.',
+          'Improved modules and reports for efficiency.',
+          'Worked in agile teams applying Scrum.'
         ]
       },
       {
         title: 'Web Design Intern – LicitApp',
         period: 'June 2025 – Present',
         bullets: [
-          'WordPress customization with HTML/CSS',
-          'UX/UI improvements and responsive design'
+         'Customized WordPress sites with HTML, CSS, and JS.',
+         'Optimized visual performance and responsive design.',
+         'Improved user experience and UI proposals.',
+         'Collaborated with the design and development team.'
+        ]
+      },
+      {
+  title: 'Web Development Intern – NHL Decoracion Comercial',
+        period: 'Sept. 2025 – Present',
+        bullets: [
+          'Improved web apps with React.js, Tailwind CSS, and Laravel.',
+          'Optimized code and functionality in web platforms.',
+          'Implemented new features and UX improvements.',
+          'Created RESTful APIs and integrated MySQL databases.',
+          'Used Git and GitHub for version control.'
         ]
       }
     ],
     technologiesGrouped: {
-      title: 'Technologies',
-      frontend: 'Frontend',
-      backend: 'Backend',
-      devops: 'DevOps & Tools',
-      items: {
+  title: 'Technologies',
+  frontend: 'Frontend',
+  backend: 'Backend',
+  database: 'Database',
+  devops: 'DevOps & Tools',
+  items: {
         frontend: [
           { name: 'React ⚛️', level: 'Advanced' },
-          { name: 'TypeScript 🟦', level: 'Intermediate' },
-          { name: 'Tailwind CSS 🎨', level: 'Advanced' }
+            { name: 'Angular 🅰️', level: 'Basic' },
+            { name: 'Next.js ⏭️', level: 'Basic' },
+            { name: 'TypeScript 🟦', level: 'Intermediate' },
+            { name: 'Tailwind CSS 🎨', level: 'Advanced' }
         ],
         backend: [
           { name: 'Node.js 🌐', level: 'Intermediate' },
           { name: 'NestJS 🛠️', level: 'Intermediate' },
-          { name: 'PostgreSQL 🐘', level: 'Basic' }
+          { name: 'Laravel 🔴', level: 'Intermediate' },
+          { name: 'Java ☕', level: 'Basic' },
+          { name: 'PHP 🐘', level: 'Basic' }
+        ],
+        database: [
+                  { name: 'MySQL 🟦', level: 'Basic' },
+                  { name: 'PostgreSQL 🐘', level: 'Basic' },
+                  { name: 'SQL Server 🟥', level: 'Basic' },
+                  { name: 'MariaDB 🟨', level: 'Basic' }
         ],
         devops: [
           { name: 'Docker 🐳', level: 'Basic' },

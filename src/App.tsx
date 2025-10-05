@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import Hero from './components/Hero'
+import Contact from './components/Contact'
 import Technologies from './components/Technologies'
 import Projects from './components/Projects'
 import About from './components/About'
 import Experience from './components/Experience'
 import Profile from './components/Profile'
+import { dictionary } from './i18n'
 import { Locale } from './i18n'
 import { FiGlobe } from 'react-icons/fi'
 
@@ -59,6 +61,7 @@ function App() {
     }
   }, [])
 
+  const t = dictionary[locale];
   return (
     <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-sans">
       {/* Partículas de fondo */}
@@ -70,10 +73,10 @@ function App() {
           <div className="text-2xl font-bold text-cyan-400">CV</div>
           <div className="flex items-center gap-8">
             <ul className="hidden md:flex list-none gap-8">
-              <li><a href="#inicio" className="text-white hover:text-cyan-400 transition-colors">Inicio</a></li>
-              <li><a href="#proyectos" className="text-white hover:text-cyan-400 transition-colors">Proyectos</a></li>
-              <li><a href="#perfil" className="text-white hover:text-cyan-400 transition-colors">Perfil</a></li>
-              <li><a href="#contacto" className="text-white hover:text-cyan-400 transition-colors">Contacto</a></li>
+              <li><a href="#inicio" className="text-white hover:text-cyan-400 transition-colors">{locale === 'es' ? 'Inicio' : 'Home'}</a></li>
+              <li><a href="#proyectos" className="text-white hover:text-cyan-400 transition-colors">{t.projects}</a></li>
+              <li><a href="#perfil" className="text-white hover:text-cyan-400 transition-colors">{t.profileSection.title}</a></li>
+              <li><a href="#contacto" className="text-white hover:text-cyan-400 transition-colors">{t.contact}</a></li>
             </ul>
             <button
               aria-label="Toggle language"
@@ -88,9 +91,11 @@ function App() {
 
       <div className="max-w-7xl mx-auto pt-24 px-8 pb-8 grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-12">
         {/* Sidebar */}
-        <aside className="lg:sticky lg:top-32 h-fit">
+        <aside className="lg:sticky lg:top-32 h-fit flex flex-col gap-8">
           <Hero locale={locale} />
           <Technologies locale={locale} />
+          <Contact locale={locale} />
+          <About locale={locale} />
         </aside>
 
         {/* Main Content */}
@@ -109,11 +114,6 @@ function App() {
           <section className="mb-12">
             <Experience locale={locale} />
           </section>
-
-          {/* About */}
-          <div>
-            <About locale={locale} />
-          </div>
         </main>
       </div>
     </div>
