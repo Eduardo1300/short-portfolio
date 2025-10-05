@@ -36,7 +36,7 @@ const Technologies: React.FC<{ locale: Locale }> = ({ locale }) => {
                 </span>
               ))}
             </div>
-          </div>
+          </div>  
 
           {/* Database */}
           <div>

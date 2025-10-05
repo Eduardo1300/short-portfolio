@@ -86,7 +86,7 @@ export const dictionary = {
         frontend: [
           { name: 'React ⚛️', level: 'Avanzado' },
           { name: 'Angular 🅰️', level: 'Básico' },
-          { name: 'Next.js ⏭️', level: 'Básico' },
+          { name: 'Next.js 🟠', level: 'Básico' },
           { name: 'TypeScript 🟦', level: 'Intermedio' },
           { name: 'Tailwind CSS 🎨', level: 'Avanzado' }
         ],
@@ -198,7 +198,7 @@ export const dictionary = {
         frontend: [
           { name: 'React ⚛️', level: 'Advanced' },
             { name: 'Angular 🅰️', level: 'Basic' },
-            { name: 'Next.js ⏭️', level: 'Basic' },
+          { name: 'Next.js 🟠', level: 'Basic' },
             { name: 'TypeScript 🟦', level: 'Intermediate' },
             { name: 'Tailwind CSS 🎨', level: 'Advanced' }
         ],
