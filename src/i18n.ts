@@ -19,27 +19,26 @@ export const dictionary = {
       { 
         title: 'Tienda Online Full Stack', 
         stack: 'React + NestJS + PostgreSQL',
-        description: 'Sistema completo de tienda. Incluye autenticación segura con JWT, gestión de productos, carrito de compras persistente y control de órdenes, todo construido con arquitectura moderna y diseño responsive usando TailwindCSS. PROYECTO EN DESARROLLO.',
+          description: 'Sistema completo de tienda. Incluye autenticación segura con JWT, gestión de productos, carrito de compras persistente y control de órdenes, todo construido con arquitectura moderna y diseño responsive usando TailwindCSS.',
         image: '/images/tienda.png',
         github: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
-        demo: 'https://proyecto-tienda-ropa.vercel.app/'
+        demo: 'https://tienda-frontend-6mrw.onrender.com/'
       },
       { 
         title: 'TaskFlow', 
         stack: 'React + TypeScript + Supabase',
         description: 'Aplicación empresarial de gestión de tareas con IA integrada, colaboración en tiempo real y múltiples integraciones. Ofrece funcionalidades avanzadas como sugerencias inteligentes, sincronización offline, control granular de permisos, API REST completa y análisis detallados para maximizar la productividad.',
         image: '/images/taskflow1.png',
-        github: 'https://github.com/Eduardo1300/taskflow-app',
         demo: 'https://taskflow-app-xi.vercel.app/'
-      }
+    },
     ],
     aboutText:
       'Apasionado por el desarrollo web moderno y la creación de soluciones digitales innovadoras. Me motiva resolver problemas complejos con código limpio y arquitecturas escalables. Busco oportunidades para crecer en equipos dinámicos trabajando en proyectos que generen impacto real en los usuarios.',
     profileSection: {
       title: 'Perfil Profesional',
       content: 'Desarrollador Full Stack Junior con sólida base en tecnologías modernas. Combino creatividad técnica con enfoque en la experiencia del usuario. Siempre dispuesto a aprender nuevas tecnologías y metodologías para crear soluciones web robustas y escalables.'
-    },
-    contactLabelEmail: '📧',
+      },
+      contactLabelEmail: '📧',
     contactLabelPhone: '📞',
     contactLabelLocation: '📍',
     experiences: 'Experiencia',
@@ -134,7 +133,7 @@ export const dictionary = {
         description: 'Complete store system. Includes secure JWT authentication, product management, persistent shopping cart, and order control—all built with a modern architecture and responsive design using TailwindCSS.',
         image: '/images/tienda.png',
         github: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
-        demo: ''
+        demo: 'https://tienda-frontend-6mrw.onrender.com/'
       },
       { 
         title: 'TaskFlow', 
