@@ -69,7 +69,7 @@ const Projects: React.FC<{ locale: Locale }> = ({ locale }) => {
             title={project.title}
             stack={project.stack}
             description={project.description}
-            repo={project.github}
+            repo={project.repo}
             demo={project.demo}
             icon={projectIcons[index] || <FaLaptopCode />}
           />

@@ -21,7 +21,7 @@ export const dictionary = {
         stack: 'React + NestJS + PostgreSQL',
           description: 'Sistema completo de tienda. Incluye autenticación segura con JWT, gestión de productos, carrito de compras persistente y control de órdenes, todo construido con arquitectura moderna y diseño responsive usando TailwindCSS.',
         image: '/images/tienda.png',
-        github: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
+    repo: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
         demo: 'https://tienda-frontend-6mrw.onrender.com/'
       },
       { 
@@ -29,7 +29,8 @@ export const dictionary = {
         stack: 'React + TypeScript + Supabase',
         description: 'Aplicación empresarial de gestión de tareas con IA integrada, colaboración en tiempo real y múltiples integraciones. Ofrece funcionalidades avanzadas como sugerencias inteligentes, sincronización offline, control granular de permisos, API REST completa y análisis detallados para maximizar la productividad.',
         image: '/images/taskflow1.png',
-        demo: 'https://taskflow-app-xi.vercel.app/'
+    repo: 'https://github.com/Eduardo1300/taskflow-app',
+    demo: 'https://taskflow-app-xi.vercel.app/'
     },
     ],
     aboutText:
@@ -132,7 +133,7 @@ export const dictionary = {
         stack: 'React + NestJS + PostgreSQL',
         description: 'Complete store system. Includes secure JWT authentication, product management, persistent shopping cart, and order control—all built with a modern architecture and responsive design using TailwindCSS.',
         image: '/images/tienda.png',
-        github: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
+    repo: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
         demo: 'https://tienda-frontend-6mrw.onrender.com/'
       },
       { 
@@ -140,7 +141,7 @@ export const dictionary = {
         stack: 'React + TypeScript + Supabase',
         description: 'Enterprise-grade task management application with integrated AI, real-time collaboration, and multiple integrations. It offers advanced features such as smart suggestions, offline sync, granular permission control, a full REST API, and detailed analytics to maximize productivity.',
         image: '/images/taskflow1.png',
-        github: 'https://github.com/Eduardo1300/taskflow-app',
+    repo: 'https://github.com/Eduardo1300/taskflow-app',
         demo: 'https://taskflow-app-xi.vercel.app/'
       }
     ],
