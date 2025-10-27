@@ -12,19 +12,19 @@ const Hero: React.FC<{ locale: Locale }> = ({ locale }) => {
       </div>
 
       {/* Name and Title */}
-      <h1 className="text-3xl font-bold mb-2 section-title text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">
+      <h1 className="text-xl md:text-3xl font-bold mb-2 section-title text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">
         CHRISTOPHER EDUARDO VALDIVIA BACA
       </h1>
-      <p className="text-xl text-gray-300 mb-2">{t.role}</p>
-      <p className="text-base text-gray-400 mb-6">{t.education}</p>
+      <p className="text-base md:text-xl text-gray-300 mb-2">{t.role}</p>
+      <p className="text-sm md:text-base text-gray-400 mb-6">{t.education}</p>
 
       {/* Social Links */}
-      <div className="flex justify-center gap-4 mb-6">
+      <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-6">
         <a
           href="https://github.com/Eduardo1300/"
           target="_blank"
           rel="noopener"
-          className="social-btn github flex items-center gap-2 px-6 py-3 rounded-full font-medium"
+          className="social-btn github flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium text-sm sm:text-base"
         >
           <FaGithub />
           GitHub
@@ -33,7 +33,7 @@ const Hero: React.FC<{ locale: Locale }> = ({ locale }) => {
           href="https://www.linkedin.com/in/christopher-eduardo-valdivia-baca-899051318/"
           target="_blank"
           rel="noopener"
-          className="social-btn linkedin flex items-center gap-2 px-6 py-3 rounded-full font-medium text-white"
+          className="social-btn linkedin flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium text-white text-sm sm:text-base"
         >
           <FaLinkedin />
           LinkedIn
@@ -44,7 +44,7 @@ const Hero: React.FC<{ locale: Locale }> = ({ locale }) => {
       <a
         href="/EduardoValdivia_CV.pdf"
         download="EduardoValdivia_CV.pdf"
-        className="social-btn download flex items-center gap-2 px-6 py-3 rounded-full font-medium w-full justify-center mb-6"
+        className="social-btn download flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium w-full justify-center mb-6 text-sm sm:text-base"
       >
         <FaDownload />
         {t.downloadCv}

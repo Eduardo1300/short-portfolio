@@ -100,11 +100,15 @@ export const dictionary = {
         database: [
           { name: 'MySQL 🟦', level: 'Básico' },
           { name: 'PostgreSQL 🐘', level: 'Básico' },
+          { name: 'MongoDB 🍃', level: 'Básico' },
           { name: 'SQL Server 🟥', level: 'Básico' },
           { name: 'MariaDB 🟨', level: 'Básico' }
         ],
         devops: [
           { name: 'Docker 🐳', level: 'Básico' },
+          { name: 'Vercel 🔷', level: 'Intermedio' },
+          { name: 'Render 🟦', level: 'Intermedio' },
+          { name: 'AWS ☁️', level: 'Básico' },
           { name: 'Git/GitHub 🔁', level: 'Avanzado' },
           { name: 'CI/CD (GitHub Actions) 🚀', level: 'Básico' }
         ]
@@ -212,11 +216,15 @@ export const dictionary = {
         database: [
                   { name: 'MySQL 🟦', level: 'Basic' },
                   { name: 'PostgreSQL 🐘', level: 'Basic' },
+                  { name: 'MongoDB 🍃', level: 'Basic' },
                   { name: 'SQL Server 🟥', level: 'Basic' },
                   { name: 'MariaDB 🟨', level: 'Basic' }
         ],
         devops: [
           { name: 'Docker 🐳', level: 'Basic' },
+          { name: 'Vercel 🔷', level: 'Intermediate' },
+          { name: 'Render 🟦', level: 'Intermediate' },
+          { name: 'AWS ☁️', level: 'Basic' },
           { name: 'Git/GitHub 🔁', level: 'Advanced' },
           { name: 'CI/CD (GitHub Actions) 🚀', level: 'Basic' }
         ]
