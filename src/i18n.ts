@@ -56,7 +56,7 @@ export const dictionary = {
       },
       {
         title: 'Practicante de Diseño Web – LicitApp',
-        period: 'Junio 2025 – Actualidad',
+        period: 'Junio 2025 – Septiembre 2025',
         bullets: [
          'Personalicé sitios WordPress con HTML, CSS y JS.',
          'Optimicé el rendimiento visual y diseño responsivo.',
@@ -172,7 +172,7 @@ export const dictionary = {
       },
       {
         title: 'Web Design Intern – LicitApp',
-        period: 'June 2025 – Present',
+        period: 'June 2025 – September 2025',
         bullets: [
          'Customized WordPress sites with HTML, CSS, and JS.',
          'Optimized visual performance and responsive design.',
