@@ -45,8 +45,8 @@ export const dictionary = {
     experiences: 'Experiencia',
     experienceItems: [
       {
-        title: 'Practicante de Desarrollo Web – DevDatep Consulting',
-        period: 'Junio 2025 – Actualidad',
+          title: 'Practicante de Desarrollo Web – DevDatep Consulting',
+          period: 'Junio 2025 – Noviembre 2025',
         bullets: [
           'Contribuí al desarrollo de apps internas con MySQL.',
           'Apoyé en el diseño de interfaces y automatización de procesos.',
@@ -65,8 +65,8 @@ export const dictionary = {
         ]
       },
       {
-  title: 'Practicante de Desarrollo Web jr – NHL Decoracion Comercial',
-        period: 'Sept. 2025 – Actualidad',
+        title: 'Practicante de Desarrollo Web jr – NHL Decoracion Comercial',
+          period: 'Sept. 2025 – Diciembre 2025',
         bullets: [
           'Mejoré apps web con React.js, Tailwind CSS y Laravel.',
           'Optimicé código y funcionalidad en plataformas web.',
@@ -161,8 +161,8 @@ export const dictionary = {
     experiences: 'Experience',
     experienceItems: [
       {
-        title: 'Web Development Intern – DevDatep Consulting',
-        period: 'June 2025 – Present',
+          title: 'Web Development Intern – DevDatep Consulting',
+          period: 'June 2025 – November 2025',
         bullets: [
           'Contributed to internal app development with MySQL.',
           'Supported UI design and process automation.',
@@ -181,8 +181,8 @@ export const dictionary = {
         ]
       },
       {
-  title: 'Web Development Intern – NHL Decoracion Comercial',
-        period: 'Sept. 2025 – Present',
+        title: 'Web Development Intern – NHL Decoracion Comercial',
+          period: 'Sept. 2025 – December 2025',
         bullets: [
           'Improved web apps with React.js, Tailwind CSS, and Laravel.',
           'Optimized code and functionality in web platforms.',
