@@ -30,7 +30,7 @@ export const dictionary = {
         description: 'Aplicación empresarial de gestión de tareas con IA integrada, colaboración en tiempo real y múltiples integraciones. Ofrece funcionalidades avanzadas como sugerencias inteligentes, sincronización offline, control granular de permisos, API REST completa y análisis detallados para maximizar la productividad.',
         image: '/images/taskflow1.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
-    demo: 'https://taskflow-app-xi.vercel.app/'
+    demo: 'https://taskflow-app-prod.vercel.app/'
     },
     ],
     aboutText:
@@ -146,7 +146,7 @@ export const dictionary = {
         description: 'Enterprise-grade task management application with integrated AI, real-time collaboration, and multiple integrations. It offers advanced features such as smart suggestions, offline sync, granular permission control, a full REST API, and detailed analytics to maximize productivity.',
         image: '/images/taskflow1.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
-        demo: 'https://taskflow-app-xi.vercel.app/'
+        demo: 'https://taskflow-app-prod.vercel.app/'
       }
     ],
     aboutText:
