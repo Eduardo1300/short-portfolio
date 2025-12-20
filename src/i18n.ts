@@ -6,8 +6,8 @@ export const dictionary = {
     projects: 'Proyectos',
     about: 'Sobre mí',
     contact: 'Contacto',
-    role: 'Desarrollador Full Stack Junior',
-    education: 'Estudiante de Computación e Informática (6to ciclo)',
+    role: 'Desarrollador Full Stack',
+    education: 'Técnico en Computación e Informática',
     location: 'Lima, Perú',
     phone: '+51 953 587 619',
     email: 'eduardovaldivia1300@gmail.com',
@@ -25,19 +25,27 @@ export const dictionary = {
         demo: 'https://tienda-frontend-6mrw.onrender.com/'
       },
       { 
-        title: 'TaskFlow', 
-        stack: 'React + TypeScript + Supabase',
-        description: 'Aplicación empresarial de gestión de tareas con IA integrada, colaboración en tiempo real y múltiples integraciones. Ofrece funcionalidades avanzadas como sugerencias inteligentes, sincronización offline, control granular de permisos, API REST completa y análisis detallados para maximizar la productividad.',
-        image: '/images/taskflow1.png',
-    repo: 'https://github.com/Eduardo1300/taskflow-app',
-    demo: 'https://taskflow-app-prod.vercel.app/'
+        title: 'Sistema de Registro de Empleados – Plataforma Full Stack', 
+        stack: 'Angular + Java + Spring Boot + MySQL',
+        description: 'Sistema empresarial para la gestión de empleados, asistencias, turnos y departamentos. Control de acceso y seguridad mediante Spring Security y autenticación JWT. API REST robusta desarrollada con Java 21 y Spring Boot 3, frontend empresarial con Angular 16, lazy loading, guards y arquitectura modular. Panel administrativo con dashboards y operaciones CRUD avanzadas, persistencia con MySQL, validaciones, auditoría y manejo global de errores. (En desarrollo)',
+        image: '/images/empleados.png',
+    repo: '',
+    demo: ''
     },
+      {
+        title: 'Sistema de Gestión Empresarial – Aplicación Full Stack',
+        stack: 'Vue.js + TypeScript + NestJS + PostgreSQL + Docker + AWS',
+        description: 'Plataforma administrativa para la gestión de usuarios, roles, áreas y operaciones internas. Autenticación JWT con control de acceso basado en roles, API REST modular desarrollada con NestJS, frontend SPA con Vue.js y manejo de estado global. Dashboard administrativo con métricas dinámicas, persistencia con PostgreSQL y despliegue en cloud con Docker y AWS.',
+        image: '/images/sistema-gestion.png',
+        repo: '',
+        demo: ''
+      }
     ],
     aboutText:
       'Apasionado por el desarrollo web moderno y la creación de soluciones digitales innovadoras. Me motiva resolver problemas complejos con código limpio y arquitecturas escalables. Busco oportunidades para crecer en equipos dinámicos trabajando en proyectos que generen impacto real en los usuarios.',
     profileSection: {
       title: 'Perfil Profesional',
-      content: 'Desarrollador Full Stack Junior con sólida base en tecnologías modernas. Combino creatividad técnica con enfoque en la experiencia del usuario. Siempre dispuesto a aprender nuevas tecnologías y metodologías para crear soluciones web robustas y escalables.'
+      content: 'Desarrollador Full Stack con sólida base en tecnologías modernas. Combino creatividad técnica con enfoque en la experiencia del usuario. Siempre dispuesto a aprender nuevas tecnologías y metodologías para crear soluciones web robustas y escalables.'
       },
       contactLabelEmail: '📧',
     contactLabelPhone: '📞',
@@ -45,34 +53,41 @@ export const dictionary = {
     experiences: 'Experiencia',
     experienceItems: [
       {
-          title: 'Practicante de Desarrollo Web – DevDatep Consulting',
-          period: 'Junio 2025 – Noviembre 2025',
+        title: 'Desarrollador Full Stack Node.js – Aynitech',
+        period: 'Dic 2025 – Actualidad',
+        isCurrent: true,
         bullets: [
-          'Contribuí al desarrollo de apps internas con MySQL.',
-          'Apoyé en el diseño de interfaces y automatización de procesos.',
-          'Mejoré módulos y reportes para mayor eficiencia.',
-          'Participé en equipos ágiles aplicando Scrum.'
+          'Desarrollo de aplicaciones Full Stack con Node.js, NestJS, TypeScript y Vue.js en entornos productivos.',
+          'Diseño e implementación de APIs REST escalables con autenticación JWT y validaciones.',
+          'Gestión de bases de datos PostgreSQL y MongoDB con optimizaciones de rendimiento.',
+          'Despliegue y mantenimiento de aplicaciones en AWS.'
         ]
       },
       {
-        title: 'Practicante de Diseño Web – LicitApp',
-        period: 'Junio 2025 – Septiembre 2025',
-        bullets: [
-         'Personalicé sitios WordPress con HTML, CSS y JS.',
-         'Optimicé el rendimiento visual y diseño responsivo.',
-         'Mejoré la experiencia de usuario y propuestas de UI.',
-         'Colaboré con el equipo de diseño y desarrollo.'
-        ]
-      },
-      {
-        title: 'Practicante de Desarrollo Web jr – NHL Decoracion Comercial',
+        title: 'Líder del área de Desarrollo Web – NHL Decoracion Comercial',
           period: 'Sept. 2025 – Diciembre 2025',
         bullets: [
-          'Mejoré apps web con React.js, Tailwind CSS y Laravel.',
-          'Optimicé código y funcionalidad en plataformas web.',
-          'Implementé nuevas funciones y mejoras UX.',
-          'Creé APIs RESTful e integré bases MySQL.',
-          'Usé Git y GitHub para control de versiones.'
+          'Lideré la implementación de interfaces web con React, Tailwind CSS, Laravel (Blade) y Next.js (TypeScript/JSX).',
+          'Diseños responsivos y animaciones con CSS, Tailwind y Framer Motion, mejorando UX.',
+          'Optimización de rendimiento y SEO, asegurando entregas alineadas con identidad visual corporativa.'
+        ]
+      },
+      {
+          title: 'Colíder del área de Desarrollo Rápido de Aplicaciones – DevDatep Consulting',
+          period: 'Junio 2025 – Noviembre 2025',
+        bullets: [
+          'Coordiné proyectos ágiles (Scrum), liderando equipos y asegurando entregas eficientes.',
+          'Desarrollé aplicaciones empresariales con Jmix, Spring Boot, Vaadin, JavaScript y PHP.',
+          'Administré bases de datos MySQL, asegurando integridad y escalabilidad.'
+        ]
+      },
+      {
+        title: 'Diseñador Web – LicitApp',
+        period: 'Junio 2025 – Septiembre 2025',
+        bullets: [
+         'Desarrollo web en WordPress, HTML, CSS y JavaScript con funcionalidades personalizadas.',
+         'Diseño responsivo y optimización de interfaces visuales para navegación fluida.',
+         'Gestión de plugins y temas personalizados según requerimientos del cliente.'
         ]
       }
     ],
@@ -85,6 +100,7 @@ export const dictionary = {
   items: {
         frontend: [
           { name: 'React ⚛️', level: 'Avanzado' },
+          { name: 'Vue.js 💚', level: 'Intermedio' },
           { name: 'Angular 🅰️', level: 'Básico' },
           { name: 'Next.js 🟠', level: 'Básico' },
           { name: 'TypeScript 🟦', level: 'Intermedio' },
@@ -122,8 +138,8 @@ export const dictionary = {
     projects: 'Projects',
     about: 'About',
     contact: 'Contact',
-    role: 'Full Stack Junior Developer',
-    education: 'Computer Science and Information Technology Student (6th cycle)',
+    role: 'Full Stack Developer',
+    education: 'Computer Science and Information Technology Technician',
     location: 'Lima, Peru',
     phone: '+51 953 587 619',
     email: 'eduardovaldivia1300@gmail.com',
@@ -132,7 +148,7 @@ export const dictionary = {
     downloadCv: 'Download CV',
     availability: 'Available for internships and freelance projects',
     projectsList: [
-      { 
+      {
         title: 'Full Stack Online Store', 
         stack: 'React + NestJS + PostgreSQL',
         description: 'Complete store system. Includes secure JWT authentication, product management, persistent shopping cart, and order control—all built with a modern architecture and responsive design using TailwindCSS.',
@@ -141,19 +157,27 @@ export const dictionary = {
         demo: 'https://tienda-frontend-6mrw.onrender.com/'
       },
       { 
-        title: 'TaskFlow', 
-        stack: 'React + TypeScript + Supabase',
-        description: 'Enterprise-grade task management application with integrated AI, real-time collaboration, and multiple integrations. It offers advanced features such as smart suggestions, offline sync, granular permission control, a full REST API, and detailed analytics to maximize productivity.',
-        image: '/images/taskflow1.png',
-    repo: 'https://github.com/Eduardo1300/taskflow-app',
-        demo: 'https://taskflow-app-prod.vercel.app/'
+        title: 'Employee Registration System – Full Stack Platform', 
+        stack: 'Angular + Java + Spring Boot + MySQL',
+        description: 'Enterprise system for managing employees, attendance, shifts, and departments. Access control and security through Spring Security and JWT authentication. Robust REST API developed with Java 21 and Spring Boot 3, enterprise frontend with Angular 16, lazy loading, guards, and modular architecture. Administrative panel with dashboards and advanced CRUD operations, persistence with MySQL, validations, audit trails, and global error handling. (Under development)',
+        image: '/images/empleados.png',
+    repo: '',
+    demo: ''
+      },
+      {
+        title: 'Enterprise Management System – Full Stack Application',
+        stack: 'Vue.js + TypeScript + NestJS + PostgreSQL + Docker + AWS',
+        description: 'Administrative platform for managing users, roles, departments, and internal operations. Features JWT authentication with role-based access control (ADMIN/USER), modular REST API built with NestJS, SPA frontend with Vue.js and global state management. Includes administrative dashboard with dynamic metrics, data persistence with PostgreSQL and ORM, and cloud deployment using Docker and AWS.',
+        image: '/images/sistema-gestion.png',
+        repo: '',
+        demo: ''
       }
     ],
     aboutText:
       'Passionate about modern web development and creating innovative digital solutions. I\'m motivated by solving complex problems with clean code and scalable architectures. I seek opportunities to grow in dynamic teams working on projects that generate real impact for users.',
     profileSection: {
       title: 'Professional Profile',
-      content: 'Full Stack Junior Developer with solid foundation in modern technologies. I combine technical creativity with user experience focus. Always willing to learn new technologies and methodologies to create robust and scalable web solutions.'
+      content: 'Full Stack Developer with solid foundation in modern technologies. I combine technical creativity with user experience focus. Always willing to learn new technologies and methodologies to create robust and scalable web solutions.'
     },
     contactLabelEmail: '📧',
     contactLabelPhone: '📞',
@@ -161,34 +185,40 @@ export const dictionary = {
     experiences: 'Experience',
     experienceItems: [
       {
-          title: 'Web Development Intern – DevDatep Consulting',
-          period: 'June 2025 – November 2025',
+        title: 'Full Stack Node.js Developer – Aynitech',
+        period: 'Dec 2025 – Present',
         bullets: [
-          'Contributed to internal app development with MySQL.',
-          'Supported UI design and process automation.',
-          'Improved modules and reports for efficiency.',
-          'Worked in agile teams applying Scrum.'
+          'Development of Full Stack applications with Node.js, NestJS, TypeScript, and Vue.js in production environments.',
+          'Design and implementation of scalable REST APIs with JWT authentication and validations.',
+          'Management of PostgreSQL and MongoDB databases with performance optimizations.',
+          'Deployment and maintenance of applications on AWS.'
         ]
       },
       {
-        title: 'Web Design Intern – LicitApp',
-        period: 'June 2025 – September 2025',
-        bullets: [
-         'Customized WordPress sites with HTML, CSS, and JS.',
-         'Optimized visual performance and responsive design.',
-         'Improved user experience and UI proposals.',
-         'Collaborated with the design and development team.'
-        ]
-      },
-      {
-        title: 'Web Development Intern – NHL Decoracion Comercial',
+        title: 'Web Development Area Leader – NHL Decoracion Comercial',
           period: 'Sept. 2025 – December 2025',
         bullets: [
-          'Improved web apps with React.js, Tailwind CSS, and Laravel.',
-          'Optimized code and functionality in web platforms.',
-          'Implemented new features and UX improvements.',
-          'Created RESTful APIs and integrated MySQL databases.',
-          'Used Git and GitHub for version control.'
+          'Led the implementation of web interfaces with React, Tailwind CSS, Laravel (Blade), and Next.js (TypeScript/JSX).',
+          'Responsive designs and animations with CSS, Tailwind, and Framer Motion, enhancing UX.',
+          'Performance and SEO optimization, ensuring deliverables aligned with corporate visual identity.'
+        ]
+      },
+      {
+          title: 'Co-Leader of Rapid Application Development Area – DevDatep Consulting',
+          period: 'June 2025 – November 2025',
+        bullets: [
+          'Coordinated agile projects (Scrum), leading teams and ensuring efficient deliveries.',
+          'Developed enterprise applications with Jmix, Spring Boot, Vaadin, JavaScript, and PHP.',
+          'Administered MySQL databases, ensuring integrity and scalability.'
+        ]
+      },
+      {
+        title: 'Web Designer – LicitApp',
+        period: 'June 2025 – September 2025',
+        bullets: [
+         'Web development in WordPress, HTML, CSS, and JavaScript with custom functionalities.',
+         'Responsive design and optimization of visual interfaces for smooth navigation.',
+         'Management of custom plugins and themes according to client requirements.'
         ]
       }
     ],
@@ -201,10 +231,11 @@ export const dictionary = {
   items: {
         frontend: [
           { name: 'React ⚛️', level: 'Advanced' },
-            { name: 'Angular 🅰️', level: 'Basic' },
+          { name: 'Vue.js 💚', level: 'Intermediate' },
+          { name: 'Angular 🅰️', level: 'Basic' },
           { name: 'Next.js 🟠', level: 'Basic' },
-            { name: 'TypeScript 🟦', level: 'Intermediate' },
-            { name: 'Tailwind CSS 🎨', level: 'Advanced' }
+          { name: 'TypeScript 🟦', level: 'Intermediate' },
+          { name: 'Tailwind CSS 🎨', level: 'Advanced' }
         ],
         backend: [
           { name: 'Node.js 🌐', level: 'Intermediate' },

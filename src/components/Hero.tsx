@@ -1,6 +1,6 @@
 import React from 'react'
 import { dictionary, Locale } from '../i18n'
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaGithub, FaLinkedin, FaDownload, FaCheckCircle } from 'react-icons/fa'
 
 const Hero: React.FC<{ locale: Locale }> = ({ locale }) => {
   const t = dictionary[locale]
@@ -8,7 +8,7 @@ const Hero: React.FC<{ locale: Locale }> = ({ locale }) => {
     <div className="glass-card profile-border rounded-3xl p-8 text-center animate-fade-in-left" id="inicio">
       {/* Avatar */}
       <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center mx-auto mb-6 text-4xl font-bold text-black shadow-xl shadow-cyan-400/30 animate-pulse-glow">
-        CV
+        EV
       </div>
 
       {/* Name and Title */}
@@ -44,7 +44,7 @@ const Hero: React.FC<{ locale: Locale }> = ({ locale }) => {
       <a
         href="/EduardoValdivia_CV.pdf"
         download="EduardoValdivia_CV.pdf"
-        className="social-btn download flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium w-full justify-center mb-6 text-sm sm:text-base"
+        className="social-btn download flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium w-full justify-center text-sm sm:text-base"
       >
         <FaDownload />
         {t.downloadCv}

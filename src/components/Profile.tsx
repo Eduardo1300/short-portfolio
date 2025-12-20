@@ -1,6 +1,6 @@
 import React from 'react'
 import { dictionary, Locale } from '../i18n'
-import { FaUserTie, FaBullseye, FaSearch } from 'react-icons/fa'
+import { FaUserTie, FaBullseye, FaRocket, FaCode, FaUsers } from 'react-icons/fa'
 
 const Profile: React.FC<{ locale: Locale }> = ({ locale }) => {
   const t = dictionary[locale]
@@ -16,17 +16,29 @@ const Profile: React.FC<{ locale: Locale }> = ({ locale }) => {
           {t.profileSection.content}
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           <div className="flex items-center gap-3 p-3 sm:p-4 bg-cyan-400/10 rounded-xl border-l-4 border-cyan-400">
             <FaBullseye className="text-cyan-400 text-lg sm:text-xl flex-shrink-0" />
-            <span className="text-gray-300 text-sm sm:text-base">
-              {locale === 'es' ? 'Enfoque en experiencia del usuario' : 'User experience focused'}
+            <span className="text-gray-300 text-xs sm:text-sm">
+              {locale === 'es' ? 'Enfoque en UX' : 'UX Focused'}
             </span>
           </div>
           <div className="flex items-center gap-3 p-3 sm:p-4 bg-cyan-400/10 rounded-xl border-l-4 border-cyan-400">
-            <FaSearch className="text-cyan-400 text-lg sm:text-xl flex-shrink-0" />
-            <span className="text-gray-300 text-sm sm:text-base">
-              {locale === 'es' ? 'Búsqueda de impacto real' : 'Seeking real impact'}
+            <FaCode className="text-cyan-400 text-lg sm:text-xl flex-shrink-0" />
+            <span className="text-gray-300 text-xs sm:text-sm">
+              {locale === 'es' ? 'Código limpio' : 'Clean Code'}
+            </span>
+          </div>
+          <div className="flex items-center gap-3 p-3 sm:p-4 bg-cyan-400/10 rounded-xl border-l-4 border-cyan-400">
+            <FaRocket className="text-cyan-400 text-lg sm:text-xl flex-shrink-0" />
+            <span className="text-gray-300 text-xs sm:text-sm">
+              {locale === 'es' ? 'Aprendizaje continuo' : 'Continuous Learning'}
+            </span>
+          </div>
+          <div className="flex items-center gap-3 p-3 sm:p-4 bg-cyan-400/10 rounded-xl border-l-4 border-cyan-400">
+            <FaUsers className="text-cyan-400 text-lg sm:text-xl flex-shrink-0" />
+            <span className="text-gray-300 text-xs sm:text-sm">
+              {locale === 'es' ? 'Trabajo en equipo' : 'Team Player'}
             </span>
           </div>
         </div>
