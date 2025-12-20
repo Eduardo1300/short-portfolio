@@ -25,10 +25,10 @@ export const dictionary = {
         demo: 'https://tienda-frontend-6mrw.onrender.com/'
       },
       { 
-        title: 'Sistema de Registro de Empleados – Plataforma Full Stack', 
+        title: 'Sistema de Inventario y Facturación – Plataforma Enterprise Full Stack', 
         stack: 'Angular + Java + Spring Boot + MySQL',
-        description: 'Sistema empresarial para la gestión de empleados, asistencias, turnos y departamentos. Control de acceso y seguridad mediante Spring Security y autenticación JWT. API REST robusta desarrollada con Java 21 y Spring Boot 3, frontend empresarial con Angular 16, lazy loading, guards y arquitectura modular. Panel administrativo con dashboards y operaciones CRUD avanzadas, persistencia con MySQL, validaciones, auditoría y manejo global de errores. (En desarrollo)',
-        image: '/images/empleados.png',
+        description: 'Plataforma empresarial para gestión de productos, stock, movimientos de inventario, clientes y facturación. Control de acceso mediante Spring Security y autenticación JWT con roles (ADMIN/OPERADOR). API REST robusta con Java 21 y Spring Boot 3 (SOLID, arquitectura en capas). Frontend con Angular 16, lazy loading, guards, servicios modulares y formularios reactivos. Panel administrativo con dashboards, reportes, filtros avanzados y CRUD complejos. Persistencia MySQL, validaciones, auditoría de cambios y manejo de errores.',
+        image: '/images/inventario.png',
     repo: '',
     demo: ''
     },
@@ -157,10 +157,10 @@ export const dictionary = {
         demo: 'https://tienda-frontend-6mrw.onrender.com/'
       },
       { 
-        title: 'Employee Registration System – Full Stack Platform', 
+        title: 'Inventory and Invoicing System – Enterprise Full Stack Platform', 
         stack: 'Angular + Java + Spring Boot + MySQL',
-        description: 'Enterprise system for managing employees, attendance, shifts, and departments. Access control and security through Spring Security and JWT authentication. Robust REST API developed with Java 21 and Spring Boot 3, enterprise frontend with Angular 16, lazy loading, guards, and modular architecture. Administrative panel with dashboards and advanced CRUD operations, persistence with MySQL, validations, audit trails, and global error handling. (Under development)',
-        image: '/images/empleados.png',
+        description: 'Enterprise platform for managing products, inventory, stock movements, customers, and invoicing. Access control through Spring Security and JWT authentication with roles (ADMIN/OPERATOR). Robust REST API with Java 21 and Spring Boot 3 (SOLID, layered architecture). Frontend with Angular 16, lazy loading, guards, modular services, and advanced reactive forms. Administrative panel with dashboards, reports, advanced filters, and complex CRUD operations. MySQL persistence, validations, change audit trails, and error handling.',
+        image: '/images/inventario.png',
     repo: '',
     demo: ''
       },
