@@ -25,12 +25,12 @@ export const dictionary = {
         demo: 'https://tienda-frontend-6mrw.onrender.com/'
       },
       { 
-        title: 'Sistema de Inventario y Facturación – Plataforma Enterprise Full Stack', 
-        stack: 'Angular + Java + Spring Boot + MySQL',
-        description: 'Plataforma empresarial para gestión de productos, stock, movimientos de inventario, clientes y facturación. Control de acceso mediante Spring Security y autenticación JWT con roles (ADMIN/OPERADOR). API REST robusta con Java 21 y Spring Boot 3 (SOLID, arquitectura en capas). Frontend con Angular 16, lazy loading, guards, servicios modulares y formularios reactivos. Panel administrativo con dashboards, reportes, filtros avanzados y CRUD complejos. Persistencia MySQL, validaciones, auditoría de cambios y manejo de errores.',
-        image: '/images/inventario.png',
-    repo: '',
-    demo: ''
+        title: 'TaskFlow – Gestor de Tareas Colaborativo con IA', 
+        stack: 'React + TypeScript + Supabase + Tailwind CSS',
+        description: 'Sistema de gestión de tareas colaborativo en tiempo real con inteligencia artificial. Autenticación segura, colaboración en vivo, múltiples vistas (Dashboard, Kanban, Calendario, Analytics). IA para recomendaciones y análisis de productividad. Sincronización offline con PWA. Análisis detallado con gráficos e insights personalizados. Interfaz responsive con modo oscuro incluido.',
+        image: '/images/taskflow.png',
+    repo: 'https://github.com/Eduardo1300/taskflow-app',
+    demo: 'https://taskflow-app-xi.vercel.app/'
     },
       {
         title: 'Sistema de Gestión Empresarial – Aplicación Full Stack',
@@ -157,12 +157,12 @@ export const dictionary = {
         demo: 'https://tienda-frontend-6mrw.onrender.com/'
       },
       { 
-        title: 'Inventory and Invoicing System – Enterprise Full Stack Platform', 
-        stack: 'Angular + Java + Spring Boot + MySQL',
-        description: 'Enterprise platform for managing products, inventory, stock movements, customers, and invoicing. Access control through Spring Security and JWT authentication with roles (ADMIN/OPERATOR). Robust REST API with Java 21 and Spring Boot 3 (SOLID, layered architecture). Frontend with Angular 16, lazy loading, guards, modular services, and advanced reactive forms. Administrative panel with dashboards, reports, advanced filters, and complex CRUD operations. MySQL persistence, validations, change audit trails, and error handling.',
-        image: '/images/inventario.png',
-    repo: '',
-    demo: ''
+        title: 'TaskFlow – AI-Powered Collaborative Task Manager', 
+        stack: 'React + TypeScript + Supabase + Tailwind CSS',
+        description: 'Collaborative real-time task management system with artificial intelligence. Secure authentication, live collaboration, multiple views (Dashboard, Kanban, Calendar, Analytics). AI-powered recommendations and productivity analysis. Offline sync with PWA technology. Detailed analytics with charts and personalized insights. Responsive interface with dark mode support.',
+        image: '/images/taskflow.png',
+    repo: 'https://github.com/Eduardo1300/taskflow-app',
+    demo: 'https://taskflow-app-xi.vercel.app/'
       },
       {
         title: 'Enterprise Management System – Full Stack Application',
