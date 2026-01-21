@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import About from './components/About'
 import Experience from './components/Experience'
 import Profile from './components/Profile'
+import StructuredData from './components/StructuredData'
 import { dictionary } from './i18n'
 import { Locale } from './i18n'
 import { FiGlobe } from 'react-icons/fi'
@@ -64,7 +65,8 @@ function App() {
   const t = dictionary[locale];
   return (
     <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-sans">
-      {/* Partículas de fondo */}
+      {/* Structured Data for SEO */}
+      <StructuredData locale={locale} />
       <div className="particles fixed top-0 left-0 w-full h-full -z-10"></div>
 
       {/* Header */}

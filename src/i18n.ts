@@ -30,7 +30,7 @@ export const dictionary = {
         description: 'Sistema de gestión de tareas colaborativo en tiempo real con inteligencia artificial. Autenticación segura, colaboración en vivo, múltiples vistas (Dashboard, Kanban, Calendario, Analytics). IA para recomendaciones y análisis de productividad. Sincronización offline con PWA. Análisis detallado con gráficos e insights personalizados. Interfaz responsive con modo oscuro incluido.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
-    demo: 'https://taskflow-app-xi.vercel.app/'
+    demo: 'https://taskflow-app-prod.vercel.app/'
     },
       {
         title: 'Sistema de Gestión Empresarial – Aplicación Full Stack',
@@ -162,7 +162,7 @@ export const dictionary = {
         description: 'Collaborative real-time task management system with artificial intelligence. Secure authentication, live collaboration, multiple views (Dashboard, Kanban, Calendar, Analytics). AI-powered recommendations and productivity analysis. Offline sync with PWA technology. Detailed analytics with charts and personalized insights. Responsive interface with dark mode support.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
-    demo: 'https://taskflow-app-xi.vercel.app/'
+    demo: 'https://taskflow-app-prod.vercel.app/'
       },
       {
         title: 'Enterprise Management System – Full Stack Application',

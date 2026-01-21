@@ -1,0 +1,27 @@
+# Robots.txt - SEO Configuration
+
+# Permitir a todos los buscadores
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://christopher-valdivia.dev/sitemap.xml
+
+# Disallow search engine crawlers from crawling unnecessary files
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.next/
+Disallow: /.vercel/
+Disallow: /dist/
+Disallow: *.map
+
+# Google Search Console
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay to prevent server overload (in seconds)
+Crawl-delay: 1
