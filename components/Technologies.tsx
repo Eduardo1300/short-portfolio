@@ -1,8 +1,9 @@
-import React from 'react'
-import { dictionary, Locale } from '../i18n'
+'use client'
+
+import { dictionary, Locale } from '@/lib/i18n'
 import { FaCode } from 'react-icons/fa'
 
-const Technologies: React.FC<{ locale: Locale }> = ({ locale }) => {
+export default function Technologies({ locale }: { locale: Locale }) {
   const t = dictionary[locale].technologiesGrouped
   
   return (
@@ -14,11 +15,10 @@ const Technologies: React.FC<{ locale: Locale }> = ({ locale }) => {
         </h3>
         
         <div className="space-y-6" role="list">
-          {/* Frontend */}
           <div role="listitem">
             <h4 className="text-gray-400 text-sm mb-3 font-semibold">{t.frontend}</h4>
             <div className="flex flex-wrap gap-2" role="list">
-              {t.items.frontend.map((item) => (
+              {t.items.frontend.map((item: { name: string }) => (
                 <span key={item.name} className="tech-tag text-cyan-400 px-3 py-2 rounded-xl text-sm font-medium" role="listitem" title={`${t.frontend}: ${item.name}`}>
                   {item.name}
                 </span>
@@ -26,11 +26,10 @@ const Technologies: React.FC<{ locale: Locale }> = ({ locale }) => {
             </div>
           </div>
 
-          {/* Backend */}
           <div role="listitem">
             <h4 className="text-gray-400 text-sm mb-3 font-semibold">{t.backend}</h4>
             <div className="flex flex-wrap gap-2" role="list">
-              {t.items.backend.map((item) => (
+              {t.items.backend.map((item: { name: string }) => (
                 <span key={item.name} className="tech-tag text-cyan-400 px-3 py-2 rounded-xl text-sm font-medium" role="listitem" title={`${t.backend}: ${item.name}`}>
                   {item.name}
                 </span>
@@ -38,11 +37,10 @@ const Technologies: React.FC<{ locale: Locale }> = ({ locale }) => {
             </div>
           </div>  
 
-          {/* Database */}
           <div role="listitem">
             <h4 className="text-gray-400 text-sm mb-3 font-semibold">{t.database}</h4>
             <div className="flex flex-wrap gap-2" role="list">
-              {t.items.database && t.items.database.map((item) => (
+              {t.items.database && t.items.database.map((item: { name: string }) => (
                 <span key={item.name} className="tech-tag text-cyan-400 px-3 py-2 rounded-xl text-sm font-medium" role="listitem" title={`${t.database}: ${item.name}`}>
                   {item.name}
                 </span>
@@ -50,11 +48,10 @@ const Technologies: React.FC<{ locale: Locale }> = ({ locale }) => {
             </div>
           </div>
 
-          {/* DevOps & Tools */}
           <div role="listitem">
             <h4 className="text-gray-400 text-sm mb-3 font-semibold">{t.devops}</h4>
             <div className="flex flex-wrap gap-2" role="list">
-              {t.items.devops.map((item) => (
+              {t.items.devops.map((item: { name: string }) => (
                 <span key={item.name} className="tech-tag text-cyan-400 px-3 py-2 rounded-xl text-sm font-medium" role="listitem" title={`${t.devops}: ${item.name}`}>
                   {item.name}
                 </span>
@@ -67,5 +64,3 @@ const Technologies: React.FC<{ locale: Locale }> = ({ locale }) => {
     </div>
   )
 }
-
-export default Technologies

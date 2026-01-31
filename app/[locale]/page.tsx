@@ -1,27 +1,32 @@
+'use client'
+
 import { useEffect, useState } from 'react'
-import Hero from './components/Hero'
-import Contact from './components/Contact'
-import Technologies from './components/Technologies'
-import Projects from './components/Projects'
-import About from './components/About'
-import Experience from './components/Experience'
-import Profile from './components/Profile'
-import StructuredData from './components/StructuredData'
-import { dictionary } from './i18n'
-import { Locale } from './i18n'
+import { useParams } from 'next/navigation'
+import Hero from '@/components/Hero'
+import Contact from '@/components/Contact'
+import Technologies from '@/components/Technologies'
+import Projects from '@/components/Projects'
+import About from '@/components/About'
+import Experience from '@/components/Experience'
+import Profile from '@/components/Profile'
+import StructuredData from '@/components/StructuredData'
+import { dictionary, Locale } from '@/lib/i18n'
 import { FiGlobe } from 'react-icons/fi'
 
-function App() {
-  const [locale, setLocale] = useState<Locale>('es')
+export default function Home() {
+  const params = useParams()
+  const locale: Locale = params.locale === 'en' ? 'en' : 'es'
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    // Crear partículas de fondo
+    setMounted(true)
+    
     const createParticles = () => {
       const particlesContainer = document.querySelector('.particles')
       if (!particlesContainer) return
       
       const particleCount = 50
-      particlesContainer.innerHTML = '' // Limpiar partículas existentes
+      particlesContainer.innerHTML = ''
 
       for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div')
@@ -38,7 +43,6 @@ function App() {
 
     createParticles()
 
-    // Smooth scroll para navegación
     const handleAnchorClick = (e: Event) => {
       const target = e.target as HTMLAnchorElement
       if (target.href?.includes('#')) {
@@ -62,14 +66,17 @@ function App() {
     }
   }, [])
 
-  const t = dictionary[locale];
+  const t = dictionary[locale]
+
+  if (!mounted) {
+    return null
+  }
+
   return (
     <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white font-sans">
-      {/* Structured Data for SEO */}
       <StructuredData locale={locale} />
       <div className="particles fixed top-0 left-0 w-full h-full -z-10"></div>
 
-      {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md border-b border-cyan-400/30 z-50 px-4 md:px-8 py-4">
         <nav className="flex justify-between items-center max-w-6xl mx-auto">
           <div className="text-xl md:text-2xl font-bold text-cyan-400">EV</div>
@@ -80,19 +87,17 @@ function App() {
               <li><a href="#proyectos" className="text-white hover:text-cyan-400 transition-colors text-sm md:text-base">{t.projects}</a></li>
               <li><a href="#perfil" className="text-white hover:text-cyan-400 transition-colors text-sm md:text-base">{t.profileSection.title}</a></li>
             </ul>
-            <button
-              aria-label="Toggle language"
-              onClick={() => setLocale((l) => (l === 'es' ? 'en' : 'es'))}
+            <a
+              href={locale === 'es' ? '/en' : '/'}
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-cyan-400/30 bg-cyan-400/10 hover:bg-cyan-400/20 transition text-xs md:text-sm text-cyan-400"
             >
-              <FiGlobe /> {locale.toUpperCase()}
-            </button>
+              <FiGlobe /> {locale === 'es' ? 'EN' : 'ES'}
+            </a>
           </div>
         </nav>
       </header>
 
       <div className="max-w-7xl mx-auto pt-24 px-4 md:px-8 pb-8 grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-8 md:gap-12">
-        {/* Sidebar */}
         <aside className="lg:sticky lg:top-32 h-fit flex flex-col gap-8">
           <Hero locale={locale} />
           <Technologies locale={locale} />
@@ -100,26 +105,21 @@ function App() {
           <About locale={locale} />
         </aside>
 
-        {/* Main Content */}
         <main className="animate-fade-in-right">
-          {/* Perfil Profesional */}
           <section className="mb-12" id="perfil">
             <Profile locale={locale} />
           </section>
 
-          {/* Experiencia */}
           <section className="mb-12" id="experiencia">
             <Experience locale={locale} />
           </section>
 
-          {/* Proyectos */}
           <section className="mb-12" id="proyectos">
             <Projects locale={locale} />
           </section>
         </main>
       </div>
 
-      {/* Footer */}
       <footer className="bg-slate-900/95 border-t border-cyan-400/30 py-6 sm:py-8 mt-8">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
@@ -137,5 +137,3 @@ function App() {
     </div>
   )
 }
-
-export default App

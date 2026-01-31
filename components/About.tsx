@@ -1,8 +1,9 @@
-import React from 'react'
-import { dictionary, Locale } from '../i18n'
+'use client'
+
+import { dictionary, Locale } from '@/lib/i18n'
 import { FaHeart, FaLightbulb, FaGraduationCap } from 'react-icons/fa'
 
-const About: React.FC<{ locale: Locale }> = ({ locale }) => {
+export default function About({ locale }: { locale: Locale }) {
   const t = dictionary[locale]
   return (
     <div className="glass-card rounded-2xl p-4 sm:p-6 h-full">
@@ -26,5 +27,3 @@ const About: React.FC<{ locale: Locale }> = ({ locale }) => {
     </div>
   )
 }
-
-export default About

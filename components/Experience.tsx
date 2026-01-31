@@ -1,9 +1,12 @@
-import React from 'react'
-import { dictionary, Locale } from '../i18n'
+'use client'
+
+import { dictionary, Locale } from '@/lib/i18n'
 import { FaBriefcase } from 'react-icons/fa'
 
-const Experience: React.FC<{ locale: Locale }> = ({ locale }) => {
+export default function Experience({ locale }: { locale: Locale }) {
   const t = dictionary[locale]
+  const experienceItems = t.experienceItems
+  
   return (
     <section className="mb-12">
       <h2 className="section-title flex items-center gap-2 sm:gap-4 text-2xl sm:text-4xl font-bold mb-6 sm:mb-8 after:content-[''] after:flex-1 after:h-0.5">
@@ -12,7 +15,7 @@ const Experience: React.FC<{ locale: Locale }> = ({ locale }) => {
       </h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6" role="list">
-        {t.experienceItems.map((exp, idx) => {
+        {experienceItems.map((exp: { title: string; period: string; bullets: readonly string[] }, idx: number) => {
           const isCurrent = exp.period.includes('Actualidad') || exp.period.includes('Present');
           const isNHL = exp.title.includes('NHL');
           return (
@@ -37,7 +40,7 @@ const Experience: React.FC<{ locale: Locale }> = ({ locale }) => {
               </div>
               <p className="text-gray-400 text-xs sm:text-sm mb-4" itemProp="description">{exp.period}</p>
               <ul className="space-y-2 text-gray-300 text-sm" role="list">
-                {exp.bullets.map((bullet, index) => (
+                {exp.bullets.map((bullet: string, index: number) => (
                   <li key={index} className="flex items-start gap-2" role="listitem">
                     <span className="text-cyan-400 mt-1 flex-shrink-0" aria-hidden="true">•</span>
                     <span>{bullet}</span>
@@ -51,5 +54,3 @@ const Experience: React.FC<{ locale: Locale }> = ({ locale }) => {
     </section>
   )
 }
-
-export default Experience

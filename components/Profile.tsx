@@ -1,8 +1,9 @@
-import React from 'react'
-import { dictionary, Locale } from '../i18n'
+'use client'
+
+import { dictionary, Locale } from '@/lib/i18n'
 import { FaUserTie, FaBullseye, FaRocket, FaCode, FaUsers } from 'react-icons/fa'
 
-const Profile: React.FC<{ locale: Locale }> = ({ locale }) => {
+export default function Profile({ locale }: { locale: Locale }) {
   const t = dictionary[locale]
   return (
     <section className="mb-12">
@@ -46,5 +47,3 @@ const Profile: React.FC<{ locale: Locale }> = ({ locale }) => {
     </section>
   )
 }
-
-export default Profile
