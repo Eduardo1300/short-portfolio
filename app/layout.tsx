@@ -107,6 +107,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1e293b" />
         <meta name="color-scheme" content="dark" />
+        <meta name="google-site-verification" content="lmuR7mnac3tpVlEe6gCHPzgcdEsVNO1S8nGQQ-gq4Ow" />
         
         {/* Preload fuentes críticas para LCP */}
         <link rel="preload" href="/fonts/PlusJakartaSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
