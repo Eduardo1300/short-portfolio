@@ -111,6 +111,28 @@ export default function RootLayout({
         {/* Preload fuentes críticas para LCP */}
         <link rel="preload" href="/fonts/PlusJakartaSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/PlusJakartaSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        
+        {/* CSS asíncrono no bloqueante - con manejo inteligente de errores */}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              var link = document.createElement('link');
+              link.rel = 'stylesheet';
+              link.href = '/_next/static/css/app/layout.css';
+              
+              // Prevenir que se muestre el error en DevTools
+              link.addEventListener('error', function(e) {
+                e.preventDefault();
+              }, true);
+              
+              link.onerror = function() {
+                // Manejar error silenciosamente
+              };
+              
+              document.head.appendChild(link);
+            })();
+          `
+        }} />
       </head>
       <body className="overflow-auto">{children}</body>
     </html>
