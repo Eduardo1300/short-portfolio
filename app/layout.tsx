@@ -102,12 +102,16 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <meta name="google-site-verification" content="lmuR7mnac3tpVlEe6gCHPzgcdEsVNO1S8nGQQ-gq4Ow" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1e293b" />
         <meta name="color-scheme" content="dark" />
-        <meta name="google-site-verification" content="lmuR7mnac3tpVlEe6gCHPzgcdEsVNO1S8nGQQ-gq4Ow" />
+        
+        {/* Preconnect para fuentes - mejora velocidad de conexión */}
+        <link rel="preconnect" href="/fonts" />
+        <link rel="dns-prefetch" href="/fonts" />
         
         {/* Preload fuentes críticas para LCP */}
         <link rel="preload" href="/fonts/PlusJakartaSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />

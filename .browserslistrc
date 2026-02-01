@@ -1,0 +1,13 @@
+# Browserslist - Solo navegadores modernos
+# Elimina polyfills ES6+ innecesarios (~12 KiB ahorro)
+
+> 0.5%
+not dead
+not op_mini all
+not ie 11
+not chrome 49
+not firefox 49
+not safari 14
+not edge 79
+not ios_saf 14
+not android 4
