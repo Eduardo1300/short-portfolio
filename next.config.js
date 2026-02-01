@@ -8,6 +8,10 @@ const nextConfig = {
           source: '/:locale/fonts/:path*',
           destination: '/fonts/:path*',
         },
+        {
+          source: '/:locale/manifest.json',
+          destination: '/manifest.json',
+        },
       ],
     };
   },
