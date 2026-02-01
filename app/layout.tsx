@@ -112,32 +112,14 @@ export default function RootLayout({
         <link rel="preload" href="/fonts/PlusJakartaSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/PlusJakartaSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         
-        {/* Suprimir errores de red de recursos no críticos */}
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.addEventListener('error', function(e) {
-              if (e.message && e.message.includes('/_next/static/css/app/layout.css')) {
-                e.preventDefault();
-              }
-            }, true);
-          `
-        }} />
-        
-        {/* CSS asíncrono no bloqueante para mejor rendimiento */}
+        {/* CSS asíncrono no bloqueante */}
         <script dangerouslySetInnerHTML={{
           __html: `
             (function() {
-              try {
-                var link = document.createElement('link');
-                link.rel = 'stylesheet';
-                link.href = '/_next/static/css/app/layout.css';
-                link.addEventListener('error', function() {
-                  // Silenciado
-                }, true);
-                document.head.appendChild(link);
-              } catch(e) {
-                // Silenciado
-              }
+              var link = document.createElement('link');
+              link.rel = 'stylesheet';
+              link.href = '/_next/static/css/app/layout.css';
+              document.head.appendChild(link);
             })();
           `
         }} />
