@@ -117,17 +117,6 @@ export default function RootLayout({
         <link rel="preload" href="/fonts/PlusJakartaSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/PlusJakartaSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         
-        {/* CSS asíncrono no bloqueante */}
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              var link = document.createElement('link');
-              link.rel = 'stylesheet';
-              link.href = '/_next/static/css/app/layout.css';
-              document.head.appendChild(link);
-            })();
-          `
-        }} />
       </head>
       <body className="overflow-auto">{children}</body>
     </html>
