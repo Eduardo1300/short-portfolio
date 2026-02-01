@@ -1,9 +1,10 @@
 'use client'
 
+import { memo } from 'react'
 import { dictionary, Locale } from '@/lib/i18n'
 import { FaCode } from 'react-icons/fa'
 
-export default function Technologies({ locale }: { locale: Locale }) {
+function Technologies({ locale }: { locale: Locale }) {
   const t = dictionary[locale].technologiesGrouped
   
   const techCategories = [
@@ -61,3 +62,5 @@ export default function Technologies({ locale }: { locale: Locale }) {
     </div>
   )
 }
+
+export default memo(Technologies)

@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback, useRef } from 'react'
 import { useParams } from 'next/navigation'
 import Hero from '@/components/Hero'
 import Contact from '@/components/Contact'
@@ -17,32 +17,41 @@ export default function Home() {
   const params = useParams()
   const locale: Locale = params.locale === 'en' ? 'en' : 'es'
   const [mounted, setMounted] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  const mainContentRef = useRef<HTMLElement>(null)
+
+  const createParticles = useCallback(() => {
+    const particlesContainer = document.querySelector('.particles')
+    if (!particlesContainer) return
+    
+    const particleCount = isMobile ? 20 : 50
+    particlesContainer.innerHTML = ''
+
+    for (let i = 0; i < particleCount; i++) {
+      const particle = document.createElement('div')
+      particle.className = 'particle'
+      particle.setAttribute('aria-hidden', 'true')
+      
+      particle.style.left = Math.random() * 100 + '%'
+      particle.style.top = Math.random() * 100 + '%'
+      particle.style.animationDelay = Math.random() * 6 + 's'
+      particle.style.animationDuration = (Math.random() * 3 + 3) + 's'
+      
+      particlesContainer.appendChild(particle)
+    }
+  }, [isMobile])
 
   useEffect(() => {
     setMounted(true)
     
-    const createParticles = () => {
-      const particlesContainer = document.querySelector('.particles')
-      if (!particlesContainer) return
-      
-      const particleCount = 50
-      particlesContainer.innerHTML = ''
-
-      for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement('div')
-        particle.className = 'particle'
-        particle.setAttribute('aria-hidden', 'true')
-        
-        particle.style.left = Math.random() * 100 + '%'
-        particle.style.top = Math.random() * 100 + '%'
-        particle.style.animationDelay = Math.random() * 6 + 's'
-        particle.style.animationDuration = (Math.random() * 3 + 3) + 's'
-        
-        particlesContainer.appendChild(particle)
-      }
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
     }
-
-    createParticles()
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    
+    const timeoutId = setTimeout(createParticles, 50)
 
     const handleAnchorClick = (e: Event) => {
       const target = e.target as HTMLAnchorElement
@@ -62,11 +71,13 @@ export default function Home() {
     })
 
     return () => {
+      window.removeEventListener('resize', checkMobile)
+      clearTimeout(timeoutId)
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.removeEventListener('click', handleAnchorClick)
       })
     }
-  }, [])
+  }, [createParticles])
 
   const t = dictionary[locale]
 
@@ -151,7 +162,7 @@ export default function Home() {
             <About locale={locale} />
           </aside>
 
-          <main className="animate-fade-in-right" id="main-content" role="main" tabIndex={-1}>
+          <main className="animate-fade-in-right" id="main-content" role="main" tabIndex={-1} ref={mainContentRef}>
             <section className="mb-12" id="perfil" aria-labelledby="perfil-title">
               <h2 id="perfil-title" className="sr-only">{t.profileSection.title}</h2>
               <Profile locale={locale} />

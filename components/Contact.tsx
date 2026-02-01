@@ -1,9 +1,10 @@
 'use client'
 
+import { memo } from 'react'
 import { dictionary, Locale } from '@/lib/i18n'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 
-export default function Contact({ locale }: { locale: Locale }) {
+function Contact({ locale }: { locale: Locale }) {
   const t = dictionary[locale]
   
   const contactInfo = [
@@ -76,3 +77,5 @@ export default function Contact({ locale }: { locale: Locale }) {
     </div>
   )
 }
+
+export default memo(Contact)

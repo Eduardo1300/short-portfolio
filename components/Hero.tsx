@@ -1,9 +1,10 @@
 'use client'
 
+import { memo } from 'react'
 import { dictionary, Locale } from '@/lib/i18n'
 import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'
 
-export default function Hero({ locale }: { locale: Locale }) {
+function Hero({ locale }: { locale: Locale }) {
   const t = dictionary[locale]
   
   return (
@@ -77,3 +78,5 @@ export default function Hero({ locale }: { locale: Locale }) {
     </div>
   )
 }
+
+export default memo(Hero)

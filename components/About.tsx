@@ -1,9 +1,10 @@
 'use client'
 
+import { memo } from 'react'
 import { dictionary, Locale } from '@/lib/i18n'
 import { FaHeart, FaLightbulb, FaGraduationCap } from 'react-icons/fa'
 
-export default function About({ locale }: { locale: Locale }) {
+function About({ locale }: { locale: Locale }) {
   const t = dictionary[locale]
   
   const traits = [
@@ -49,3 +50,5 @@ export default function About({ locale }: { locale: Locale }) {
     </div>
   )
 }
+
+export default memo(About)

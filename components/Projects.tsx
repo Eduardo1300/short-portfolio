@@ -1,5 +1,6 @@
 'use client'
 
+import { memo } from 'react'
 import { dictionary, Locale } from '@/lib/i18n'
 import { FaLaptopCode, FaGithub, FaExternalLinkAlt, FaShoppingCart, FaUsers, FaCog } from 'react-icons/fa'
 
@@ -99,7 +100,7 @@ function ProjectCard({ title, stack, description, repo, demo, icon, isFeatured =
   )
 }
 
-export default function Projects({ locale }: { locale: Locale }) {
+function Projects({ locale }: { locale: Locale }) {
   const t = dictionary[locale]
   
   const projectIcons = [
@@ -164,3 +165,5 @@ export default function Projects({ locale }: { locale: Locale }) {
     </section>
   )
 }
+
+export default memo(Projects)

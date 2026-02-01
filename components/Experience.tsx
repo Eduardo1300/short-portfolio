@@ -1,9 +1,10 @@
 'use client'
 
+import { memo } from 'react'
 import { dictionary, Locale } from '@/lib/i18n'
 import { FaBriefcase } from 'react-icons/fa'
 
-export default function Experience({ locale }: { locale: Locale }) {
+function Experience({ locale }: { locale: Locale }) {
   const t = dictionary[locale]
   const experienceItems = t.experienceItems
   
@@ -82,3 +83,5 @@ export default function Experience({ locale }: { locale: Locale }) {
     </section>
   )
 }
+
+export default memo(Experience)

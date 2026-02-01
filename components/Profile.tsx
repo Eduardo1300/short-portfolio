@@ -1,9 +1,10 @@
 'use client'
 
+import { memo } from 'react'
 import { dictionary, Locale } from '@/lib/i18n'
 import { FaUserTie, FaBullseye, FaRocket, FaCode, FaUsers } from 'react-icons/fa'
 
-export default function Profile({ locale }: { locale: Locale }) {
+function Profile({ locale }: { locale: Locale }) {
   const t = dictionary[locale]
   
   const profileHighlights = [
@@ -60,3 +61,5 @@ export default function Profile({ locale }: { locale: Locale }) {
     </section>
   )
 }
+
+export default memo(Profile)
