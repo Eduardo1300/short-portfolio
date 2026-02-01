@@ -21,13 +21,13 @@ function Technologies({ locale }: { locale: Locale }) {
         role="region"
         aria-labelledby="tech-heading"
       >
-        <h3 
+        <h2 
           id="tech-heading"
           className="flex items-center gap-2 mb-6 text-cyan-400 font-semibold text-lg"
         >
           <FaCode aria-hidden="true" />
           {t.title}
-        </h3>
+        </h2>
         
         <div 
           className="space-y-6" 
@@ -36,9 +36,9 @@ function Technologies({ locale }: { locale: Locale }) {
         >
           {techCategories.map((category) => (
             <div key={category.key} role="listitem">
-              <h4 className="text-gray-400 text-sm mb-3 font-semibold">
+              <h3 className="text-gray-400 text-sm mb-3 font-semibold">
                 {category.label}
-              </h4>
+              </h3>
               <ul 
                 className="flex flex-wrap gap-2" 
                 role="list"
