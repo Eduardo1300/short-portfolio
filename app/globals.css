@@ -264,3 +264,19 @@ html {
   outline: 2px solid rgba(64, 224, 208, 0.8);
   outline-offset: 2px;
 }
+
+/* Performance optimizations for LCP */
+section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
+aside {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
+}
+
+footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 150px;
+}
