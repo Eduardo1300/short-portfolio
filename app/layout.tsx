@@ -107,16 +107,6 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1e293b" />
         <meta name="color-scheme" content="dark" />
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              var link = document.createElement('link');
-              link.rel = 'stylesheet';
-              link.href = '/_next/static/css/app/layout.css';
-              document.head.appendChild(link);
-            })();
-          `
-        }} />
       </head>
       <body className="overflow-auto">{children}</body>
     </html>
