@@ -112,24 +112,32 @@ export default function RootLayout({
         <link rel="preload" href="/fonts/PlusJakartaSans-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/PlusJakartaSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         
-        {/* CSS asíncrono no bloqueante - con manejo inteligente de errores */}
+        {/* Suprimir errores de red de recursos no críticos */}
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.addEventListener('error', function(e) {
+              if (e.message && e.message.includes('/_next/static/css/app/layout.css')) {
+                e.preventDefault();
+              }
+            }, true);
+          `
+        }} />
+        
+        {/* CSS asíncrono no bloqueante para mejor rendimiento */}
         <script dangerouslySetInnerHTML={{
           __html: `
             (function() {
-              var link = document.createElement('link');
-              link.rel = 'stylesheet';
-              link.href = '/_next/static/css/app/layout.css';
-              
-              // Prevenir que se muestre el error en DevTools
-              link.addEventListener('error', function(e) {
-                e.preventDefault();
-              }, true);
-              
-              link.onerror = function() {
-                // Manejar error silenciosamente
-              };
-              
-              document.head.appendChild(link);
+              try {
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = '/_next/static/css/app/layout.css';
+                link.addEventListener('error', function() {
+                  // Silenciado
+                }, true);
+                document.head.appendChild(link);
+              } catch(e) {
+                // Silenciado
+              }
             })();
           `
         }} />
