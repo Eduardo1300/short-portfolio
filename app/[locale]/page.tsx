@@ -163,18 +163,15 @@ export default function Home() {
           </aside>
 
           <main className="animate-fade-in-right" id="main-content" role="main" tabIndex={-1} ref={mainContentRef}>
-            <section className="mb-12" id="perfil" aria-labelledby="perfil-title">
-              <h2 id="perfil-title" className="sr-only">{t.profileSection.title}</h2>
+            <section className="mb-12" id="perfil">
               <Profile locale={locale} />
             </section>
 
-            <section className="mb-12" id="experiencia" aria-labelledby="experiencia-title">
-              <h2 id="experiencia-title" className="sr-only">{t.experiences}</h2>
+            <section className="mb-12" id="experiencia">
               <Experience locale={locale} />
             </section>
 
-            <section className="mb-12" id="proyectos" aria-labelledby="proyectos-title">
-              <h2 id="proyectos-title" className="sr-only">{t.projects}</h2>
+            <section className="mb-12" id="proyectos">
               <Projects locale={locale} />
             </section>
           </main>
