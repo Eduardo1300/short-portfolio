@@ -34,11 +34,11 @@ export const dictionary = {
     },
       {
         title: 'Sistema de Gestión Empresarial – Aplicación Full Stack',
-        stack: 'Vue.js + TypeScript + NestJS + PostgreSQL + Docker + AWS',
-        description: 'Plataforma administrativa para la gestión de usuarios, roles, áreas y operaciones internas. Autenticación JWT con control de acceso basado en roles, API REST modular desarrollada con NestJS, frontend SPA con Vue.js y manejo de estado global. Dashboard administrativo con métricas dinámicas, persistencia con PostgreSQL y despliegue en cloud con Docker y AWS.',
+        stack: 'React + TypeScript + NestJS + PostgreSQL + Docker',
+        description: 'Plataforma administrativa para la gestión de usuarios, roles, áreas y operaciones internas. Autenticación JWT con control de acceso basado en roles, API REST modular desarrollada con NestJS, frontend SPA con React y manejo de estado global. Dashboard administrativo con métricas dinámicas, persistencia con PostgreSQL y despliegue en cloud con Docker.',
         image: '/images/sistema-gestion.png',
-        repo: '',
-        demo: ''
+        repo: 'https://github.com/Eduardo1300/Aplicacion-de-Registros-de-Empleados',
+        demo: 'https://gestion.christophervaldivia.me/'
       }
     ],
     aboutText:
@@ -166,11 +166,11 @@ export const dictionary = {
       },
       {
         title: 'Enterprise Management System – Full Stack Application',
-        stack: 'Vue.js + TypeScript + NestJS + PostgreSQL + Docker + AWS',
-        description: 'Administrative platform for managing users, roles, departments, and internal operations. Features JWT authentication with role-based access control (ADMIN/USER), modular REST API built with NestJS, SPA frontend with Vue.js and global state management. Includes administrative dashboard with dynamic metrics, data persistence with PostgreSQL and ORM, and cloud deployment using Docker and AWS.',
+        stack: 'React + TypeScript + NestJS + PostgreSQL + Docker',
+        description: 'Administrative platform for managing users, roles, departments, and internal operations. Features JWT authentication with role-based access control (ADMIN/USER), modular REST API built with NestJS, SPA frontend with React and global state management. Includes administrative dashboard with dynamic metrics, data persistence with PostgreSQL and ORM, and cloud deployment using Docker.',
         image: '/images/sistema-gestion.png',
-        repo: '',
-        demo: ''
+        repo: 'https://github.com/Eduardo1300/Aplicacion-de-Registros-de-Empleados',
+        demo: 'https://gestion.christophervaldivia.me/'
       }
     ],
     aboutText:
