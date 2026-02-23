@@ -26,7 +26,7 @@ export const dictionary = {
       },
       { 
         title: 'TaskFlow – Gestor de Tareas Colaborativo con IA', 
-        stack: 'React + TypeScript + Supabase + Tailwind CSS',
+        stack: 'React + TypeScript + NestJS + Tailwind CSS',
         description: 'Sistema de gestión de tareas colaborativo en tiempo real con inteligencia artificial. Autenticación segura, colaboración en vivo, múltiples vistas (Dashboard, Kanban, Calendario, Analytics). IA para recomendaciones y análisis de productividad. Sincronización offline con PWA. Análisis detallado con gráficos e insights personalizados. Interfaz responsive con modo oscuro incluido.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
@@ -64,16 +64,16 @@ export const dictionary = {
         ]
       },
       {
-        title: 'Líder del área de Desarrollo Web – NHL Decoracion Comercial',
+        title: 'Desarrollador Web – NHL Decoracion Comercial',
           period: 'Sept. 2025 – Diciembre 2025',
         bullets: [
-          'Lideré la implementación de interfaces web con React, Tailwind CSS, Laravel (Blade) y Next.js (TypeScript/JSX).',
+          'Implementé interfaces web con React, Tailwind CSS, Laravel (Blade) y Next.js (TypeScript/JSX).',
           'Diseños responsivos y animaciones con CSS, Tailwind y Framer Motion, mejorando UX.',
           'Optimización de rendimiento y SEO, asegurando entregas alineadas con identidad visual corporativa.'
         ]
       },
       {
-          title: 'Colíder del área de Desarrollo Rápido de Aplicaciones – DevDatep Consulting',
+          title: 'Desarrollador de Aplicaciones – DevDatep Consulting',
           period: 'Junio 2025 – Noviembre 2025',
         bullets: [
           'Coordiné proyectos ágiles (Scrum), liderando equipos y asegurando entregas eficientes.',
@@ -158,7 +158,7 @@ export const dictionary = {
       },
       { 
         title: 'TaskFlow – AI-Powered Collaborative Task Manager', 
-        stack: 'React + TypeScript + Supabase + Tailwind CSS',
+        stack: 'React + TypeScript + NestJS + Tailwind CSS',
         description: 'Collaborative real-time task management system with artificial intelligence. Secure authentication, live collaboration, multiple views (Dashboard, Kanban, Calendar, Analytics). AI-powered recommendations and productivity analysis. Offline sync with PWA technology. Detailed analytics with charts and personalized insights. Responsive interface with dark mode support.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
@@ -195,16 +195,16 @@ export const dictionary = {
         ]
       },
       {
-        title: 'Web Development Area Leader – NHL Decoracion Comercial',
+        title: 'Web Developer – NHL Decoracion Comercial',
           period: 'Sept. 2025 – December 2025',
         bullets: [
-          'Led the implementation of web interfaces with React, Tailwind CSS, Laravel (Blade), and Next.js (TypeScript/JSX).',
+          'Implemented web interfaces with React, Tailwind CSS, Laravel (Blade), and Next.js (TypeScript/JSX).',
           'Responsive designs and animations with CSS, Tailwind, and Framer Motion, enhancing UX.',
           'Performance and SEO optimization, ensuring deliverables aligned with corporate visual identity.'
         ]
       },
       {
-          title: 'Co-Leader of Rapid Application Development Area – DevDatep Consulting',
+          title: 'Application Development Developer – DevDatep Consulting',
           period: 'June 2025 – November 2025',
         bullets: [
           'Coordinated agile projects (Scrum), leading teams and ensuring efficient deliveries.',

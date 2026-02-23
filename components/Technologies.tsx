@@ -30,17 +30,17 @@ function Technologies({ locale }: { locale: Locale }) {
         </h2>
         
         <div 
-          className="space-y-6" 
+          className="space-y-10" 
           role="list"
           aria-label={t.title}
         >
           {techCategories.map((category) => (
             <div key={category.key} role="listitem">
-              <h3 className="text-gray-400 text-sm mb-3 font-semibold">
+              <h3 className="text-gray-400 text-sm mb-5 font-semibold">
                 {category.label}
               </h3>
               <ul 
-                className="flex flex-wrap gap-2" 
+                className="flex flex-wrap gap-4" 
                 role="list"
                 aria-label={`${category.label} technologies`}
               >
