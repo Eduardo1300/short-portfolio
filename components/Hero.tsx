@@ -64,7 +64,7 @@ function Hero({ locale }: { locale: Locale }) {
       </nav>
 
       <a
-        href="/EduardoValdivia_CV.pdf"
+        href="/api/download-cv"
         download="EduardoValdivia_CV.pdf"
         className="social-btn download flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium w-full justify-center text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900"
         aria-label={locale === 'es' 

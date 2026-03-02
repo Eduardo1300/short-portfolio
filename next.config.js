@@ -16,10 +16,6 @@ const nextConfig = {
           source: '/:locale/manifest.json',
           destination: '/manifest.json',
         },
-        {
-          source: '/:locale/:file(.+\\.pdf)$',
-          destination: '/:file',
-        },
       ],
     };
   },
