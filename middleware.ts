@@ -11,7 +11,7 @@ export function middleware(request: NextRequest) {
   )
 
   if (pathnameIsMissingLocale) {
-    const locale = 'es'
+    const locale = 'en'
     return NextResponse.redirect(
       new URL(`/${locale}${pathname}`, request.url)
     )
