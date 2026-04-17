@@ -21,24 +21,24 @@ export const dictionary = {
     projectsList: [
       { 
         title: 'Tienda Online Full Stack', 
-        stack: 'React + NestJS + PostgreSQL',
-          description: 'Sistema completo de tienda. Incluye autenticación segura con JWT, gestión de productos, carrito de compras persistente y control de órdenes, todo construido con arquitectura moderna y diseño responsive usando TailwindCSS.',
+        stack: 'Vue + NestJS + PostgreSQL',
+          description: 'Sistema completo de tienda. Incluye autenticación segura con JWT, gestión de productos, carrito de compras persistente y control de órdenes, todo construido con arquitectura moderna y diseño responsive usando TailwindCSS y Vue.',
         image: '/images/tienda.png',
     repo: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
         demo: 'https://tienda.christophervaldivia.me/'
       },
       { 
         title: 'TaskFlow – Gestor de Tareas Colaborativo con IA', 
-        stack: 'React + TypeScript + NestJS + Tailwind CSS',
-        description: 'Sistema de gestión de tareas colaborativo en tiempo real con inteligencia artificial. Autenticación segura, colaboración en vivo, múltiples vistas (Dashboard, Kanban, Calendario, Analytics). IA para recomendaciones y análisis de productividad. Sincronización offline con PWA. Análisis detallado con gráficos e insights personalizados. Interfaz responsive con modo oscuro incluido.',
+        stack: 'Vue + TypeScript + NestJS + Tailwind CSS',
+        description: 'Sistema de gestión de tareas colaborativo en tiempo real con inteligencia artificial. Autenticación segura, colaboración en vivo, múltiples vistas (Dashboard, Kanban, Calendario, Analytics). IA para recomendaciones y análisis de productividad. Sincronización offline con PWA. Análisis detallado con gráficos e insights personalizados. Interfaz responsive con modo oscuro incluido y construida con Vue.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
     demo: 'https://taskflow.christophervaldivia.me/'
     },
       {
         title: 'Sistema de Gestión Empresarial – Aplicación Full Stack',
-        stack: 'React + TypeScript + NestJS + PostgreSQL + Docker',
-        description: 'Plataforma administrativa para la gestión de usuarios, roles, áreas y operaciones internas. Autenticación JWT con control de acceso basado en roles, API REST modular desarrollada con NestJS, frontend SPA con React y manejo de estado global. Dashboard administrativo con métricas dinámicas, persistencia con PostgreSQL y despliegue en cloud con Docker.',
+        stack: 'Vue + TypeScript + NestJS + PostgreSQL + Docker',
+        description: 'Plataforma administrativa para la gestión de usuarios, roles, áreas y operaciones internas. Autenticación JWT con control de acceso basado en roles, API REST modular desarrollada con NestJS, frontend SPA con Vue y manejo de estado global. Dashboard administrativo con métricas dinámicas, persistencia con PostgreSQL y despliegue en cloud con Docker.',
         image: '/images/sistema-gestion.png',
         repo: 'https://github.com/Eduardo1300/Aplicacion-de-Registros-de-Empleados',
         demo: 'https://gestion.christophervaldivia.me/'
@@ -48,7 +48,7 @@ export const dictionary = {
       'Apasionado por el desarrollo web moderno y la creación de soluciones digitales innovadoras. Me motiva resolver problemas complejos con código limpio y arquitecturas escalables. Busco oportunidades para crecer en equipos dinámicos trabajando en proyectos que generen impacto real en los usuarios.',
     profileSection: {
       title: 'Perfil Profesional',
-      content: 'Desarrollador Full Stack con sólida base en tecnologías modernas. Combino creatividad técnica con enfoque en la experiencia del usuario. Siempre dispuesto a aprender nuevas tecnologías y metodologías para crear soluciones web robustas y escalables.'
+      content: 'Desarrollador Full Stack con sólida base en tecnologías modernas. Combino creatividad técnica con enfoque en la experiencia del usuario, especialmente con Vue y su ecosistema. Siempre dispuesto a aprender nuevas tecnologías y metodologías para crear soluciones web robustas y escalables.'
       },
       contactLabelEmail: '📧',
     contactLabelPhone: '📞',
@@ -102,10 +102,9 @@ export const dictionary = {
   devops: 'DevOps & Tools',
   items: {
         frontend: [
-          { name: 'React ⚛️', level: 'Avanzado' },
-          { name: 'Vue.js 💚', level: 'Intermedio' },
+          { name: 'Vue.js 💚', level: 'Avanzado' },
+          { name: 'Nuxt.js 🟠', level: 'Intermedio' },
           { name: 'Angular 🅰️', level: 'Básico' },
-          { name: 'Next.js 🟠', level: 'Básico' },
           { name: 'TypeScript 🟦', level: 'Intermedio' },
           { name: 'Tailwind CSS 🎨', level: 'Avanzado' }
         ],
@@ -153,24 +152,24 @@ export const dictionary = {
     projectsList: [
       {
         title: 'Full Stack Online Store', 
-        stack: 'React + NestJS + PostgreSQL',
-        description: 'Complete store system. Includes secure JWT authentication, product management, persistent shopping cart, and order control—all built with a modern architecture and responsive design using TailwindCSS.',
+        stack: 'Vue + NestJS + PostgreSQL',
+        description: 'Complete store system. Includes secure JWT authentication, product management, persistent shopping cart, and order control—all built with a modern architecture and responsive design using TailwindCSS and Vue.',
         image: '/images/tienda.png',
     repo: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
         demo: 'https://tienda.christophervaldivia.me/'
       },
       { 
         title: 'TaskFlow – AI-Powered Collaborative Task Manager', 
-        stack: 'React + TypeScript + NestJS + Tailwind CSS',
-        description: 'Collaborative real-time task management system with artificial intelligence. Secure authentication, live collaboration, multiple views (Dashboard, Kanban, Calendar, Analytics). AI-powered recommendations and productivity analysis. Offline sync with PWA technology. Detailed analytics with charts and personalized insights. Responsive interface with dark mode support.',
+        stack: 'Vue + TypeScript + NestJS + Tailwind CSS',
+        description: 'Collaborative real-time task management system with artificial intelligence. Secure authentication, live collaboration, multiple views (Dashboard, Kanban, Calendar, Analytics). AI-powered recommendations and productivity analysis. Offline sync with PWA technology. Detailed analytics with charts and personalized insights. Responsive interface with dark mode support and built with Vue.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
     demo: 'https://taskflow.christophervaldivia.me/'
       },
       {
         title: 'Enterprise Management System – Full Stack Application',
-        stack: 'React + TypeScript + NestJS + PostgreSQL + Docker',
-        description: 'Administrative platform for managing users, roles, departments, and internal operations. Features JWT authentication with role-based access control (ADMIN/USER), modular REST API built with NestJS, SPA frontend with React and global state management. Includes administrative dashboard with dynamic metrics, data persistence with PostgreSQL and ORM, and cloud deployment using Docker.',
+        stack: 'Vue + TypeScript + NestJS + PostgreSQL + Docker',
+        description: 'Administrative platform for managing users, roles, departments, and internal operations. Features JWT authentication with role-based access control (ADMIN/USER), modular REST API built with NestJS, SPA frontend with Vue and global state management. Includes administrative dashboard with dynamic metrics, data persistence with PostgreSQL and ORM, and cloud deployment using Docker.',
         image: '/images/sistema-gestion.png',
         repo: 'https://github.com/Eduardo1300/Aplicacion-de-Registros-de-Empleados',
         demo: 'https://gestion.christophervaldivia.me/'
@@ -180,7 +179,7 @@ export const dictionary = {
       'Passionate about modern web development and creating innovative digital solutions. I\'m motivated by solving complex problems with clean code and scalable architectures. I seek opportunities to grow in dynamic teams working on projects that generate real impact for users.',
     profileSection: {
       title: 'Professional Profile',
-      content: 'Full Stack Developer with solid foundation in modern technologies. I combine technical creativity with user experience focus. Always willing to learn new technologies and methodologies to create robust and scalable web solutions.'
+      content: 'Full Stack Developer with solid foundation in modern technologies. I combine technical creativity with user experience focus, especially with Vue and its ecosystem. Always willing to learn new technologies and methodologies to create robust and scalable web solutions.'
     },
     contactLabelEmail: '📧',
     contactLabelPhone: '📞',
@@ -233,10 +232,9 @@ export const dictionary = {
   devops: 'DevOps & Tools',
   items: {
         frontend: [
-          { name: 'React ⚛️', level: 'Advanced' },
-          { name: 'Vue.js 💚', level: 'Intermediate' },
+          { name: 'Vue.js 💚', level: 'Advanced' },
+          { name: 'Nuxt.js 🟠', level: 'Intermediate' },
           { name: 'Angular 🅰️', level: 'Basic' },
-          { name: 'Next.js 🟠', level: 'Basic' },
           { name: 'TypeScript 🟦', level: 'Intermediate' },
           { name: 'Tailwind CSS 🎨', level: 'Advanced' }
         ],

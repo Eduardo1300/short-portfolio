@@ -22,8 +22,8 @@ export default function StructuredData({ locale }: { locale: 'es' | 'en' }) {
           ],
           "jobTitle": locale === 'es' ? "Desarrollador Full Stack" : "Full Stack Developer",
           "description": locale === 'es' 
-            ? "Desarrollador Full Stack especializado en React, TypeScript, NestJS y tecnologías modernas."
-            : "Full Stack Developer specialized in React, TypeScript, NestJS and modern technologies.",
+            ? "Desarrollador Full Stack especializado en Vue, TypeScript, NestJS y tecnologías modernas."
+            : "Full Stack Developer specialized in Vue, TypeScript, NestJS and modern technologies.",
           "email": "eduardovaldivia1300@gmail.com",
           "telephone": "+51-953-587-619",
           "address": {
@@ -33,11 +33,10 @@ export default function StructuredData({ locale }: { locale: 'es' | 'en' }) {
             "addressCountry": "PE"
           },
           "knowsAbout": [
-            "React",
+            "Vue.js",
             "TypeScript",
             "NestJS",
             "JavaScript",
-            "Vue.js",
             "PostgreSQL",
             "Full Stack Development",
             "Web Development"
@@ -53,8 +52,8 @@ export default function StructuredData({ locale }: { locale: 'es' | 'en' }) {
           "url": "https://christopher-valdivia.dev",
           "name": "Christopher Valdivia - Full Stack Developer",
           "description": locale === 'es' 
-            ? "Portafolio profesional de desarrollador Full Stack especializado en React, TypeScript y NestJS"
-            : "Professional Full Stack Developer portfolio specialized in React, TypeScript and NestJS",
+            ? "Portafolio profesional de desarrollador Full Stack especializado en Vue, TypeScript y NestJS"
+            : "Professional Full Stack Developer portfolio specialized in Vue, TypeScript and NestJS",
           "inLanguage": locale,
           "creator": {
             "@id": "https://christopher-valdivia.dev#person"

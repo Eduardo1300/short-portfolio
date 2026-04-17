@@ -5,14 +5,14 @@ import './fonts.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://christopher-valdivia.dev'),
   title: {
-    default: 'Christopher Valdivia | Desarrollador Full Stack React + TypeScript + NestJS',
+    default: 'Christopher Valdivia | Desarrollador Full Stack Vue + TypeScript + NestJS',
     template: '%s | Christopher Valdivia',
   },
-  description: 'Portafolio profesional de Christopher Valdivia, desarrollador Full Stack especializado en React, TypeScript, NestJS. Proyectos de calidad empresarial con arquitectura escalable.',
+  description: 'Portafolio profesional de Christopher Valdivia, desarrollador Full Stack especializado en Vue, TypeScript, NestJS. Proyectos de calidad empresarial con arquitectura escalable.',
   keywords: [
     'desarrollador web',
     'full stack developer',
-    'React',
+    'Vue',
     'TypeScript',
     'NestJS',
     'JavaScript',
@@ -49,8 +49,8 @@ export const metadata: Metadata = {
     locale: 'es_ES',
     url: 'https://christopher-valdivia.dev',
     siteName: 'Christopher Valdivia',
-    title: 'Christopher Valdivia | Desarrollador Full Stack React + TypeScript + NestJS',
-    description: 'Portafolio profesional - Especialista en React, TypeScript, NestJS. Proyectos innovadores con arquitectura escalable.',
+    title: 'Christopher Valdivia | Desarrollador Full Stack Vue + TypeScript + NestJS',
+    description: 'Portafolio profesional - Especialista en Vue, TypeScript, NestJS. Proyectos innovadores con arquitectura escalable.',
     images: [
       {
         url: '/og-image.jpg',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     site: '@christopherdev',
     creator: '@christopherdev',
     title: 'Christopher Valdivia | Desarrollador Full Stack',
-    description: 'Portafolio profesional de desarrollador Full Stack - Proyectos con React, TypeScript, NestJS y más.',
+    description: 'Portafolio profesional de desarrollador Full Stack - Proyectos con Vue, TypeScript, NestJS y más.',
     images: ['/og-image.jpg'],
   },
   facebook: {
