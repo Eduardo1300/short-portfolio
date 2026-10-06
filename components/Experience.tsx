@@ -65,7 +65,7 @@ function Experience({ locale }: { locale: Locale }) {
                 {exp.period}
               </p>
               <ul 
-                className="space-y-2 text-gray-300 text-sm" 
+                className="space-y-2 text-gray-300 text-base sm:text-lg" 
                 role="list"
                 aria-label={locale === 'es' ? 'Funciones y responsabilidades' : 'Functions and responsibilities'}
               >
