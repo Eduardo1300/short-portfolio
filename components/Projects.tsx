@@ -106,13 +106,11 @@ function Projects({ locale }: { locale: Locale }) {
   const projectIcons = [
     <FaShoppingCart key="shop" aria-hidden="true" />,
     <FaUsers key="empleados" aria-hidden="true" />,
-    <FaCog key="gestion" aria-hidden="true" />,
   ]
 
   const altTexts = [
     locale === 'es' ? 'Tienda online con carrito de compras' : 'Online store with shopping cart',
     locale === 'es' ? 'Sistema de gestión de tareas colaborativo con IA' : 'AI-powered collaborative task management system',
-    locale === 'es' ? 'Sistema de gestión empresarial full stack' : 'Full stack enterprise management system',
   ]
   
   return (
@@ -130,34 +128,17 @@ function Projects({ locale }: { locale: Locale }) {
         role="list"
         aria-label={t.projects}
       >
-        <div 
-          key={t.projectsList[0].title} 
-          role="listitem" 
-          className="lg:col-span-2"
-        >
-          <ProjectCard
-            title={t.projectsList[0].title}
-            stack={t.projectsList[0].stack}
-            description={t.projectsList[0].description}
-            repo={t.projectsList[0].repo}
-            demo={t.projectsList[0].demo}
-            icon={projectIcons[0]}
-            isFeatured={true}
-            altText={altTexts[0]}
-          />
-        </div>
-        
-        {t.projectsList.slice(1).map((project, index) => (
-          <div key={project.title} role="listitem">
+        {t.projectsList.map((project, index) => (
+          <div key={project.title} role="listitem" className="lg:col-span-2">
             <ProjectCard
               title={project.title}
               stack={project.stack}
               description={project.description}
               repo={project.repo}
               demo={project.demo}
-              icon={projectIcons[index + 1]}
-              isFeatured={false}
-              altText={altTexts[index + 1]}
+              icon={projectIcons[index]}
+              isFeatured={true}
+              altText={altTexts[index]}
             />
           </div>
         ))}
