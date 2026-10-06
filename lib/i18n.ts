@@ -34,15 +34,7 @@ export const dictionary = {
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
     demo: 'https://taskflow.christophervaldivia.me/'
-    },
-      {
-        title: 'Sistema de Gestión Empresarial – Aplicación Full Stack',
-        stack: 'Vue + TypeScript + NestJS + PostgreSQL + Docker',
-        description: 'Plataforma administrativa para la gestión de usuarios, roles, áreas y operaciones internas. Autenticación JWT con control de acceso basado en roles, API REST modular desarrollada con NestJS, frontend SPA con Vue y manejo de estado global. Dashboard administrativo con métricas dinámicas, persistencia con PostgreSQL y despliegue en cloud con Docker.',
-        image: '/images/sistema-gestion.png',
-        repo: 'https://github.com/Eduardo1300/Aplicacion-de-Registros-de-Empleados',
-        demo: 'https://gestion.christophervaldivia.me/'
-      }
+    }
     ],
     aboutText:
       'Apasionado por el desarrollo web moderno y la creación de soluciones digitales innovadoras. Me motiva resolver problemas complejos con código limpio y arquitecturas escalables. Busco oportunidades para crecer en equipos dinámicos trabajando en proyectos que generen impacto real en los usuarios.',
@@ -165,14 +157,6 @@ export const dictionary = {
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
     demo: 'https://taskflow.christophervaldivia.me/'
-      },
-      {
-        title: 'Enterprise Management System – Full Stack Application',
-        stack: 'Vue + TypeScript + NestJS + PostgreSQL + Docker',
-        description: 'Administrative platform for managing users, roles, departments, and internal operations. Features JWT authentication with role-based access control (ADMIN/USER), modular REST API built with NestJS, SPA frontend with Vue and global state management. Includes administrative dashboard with dynamic metrics, data persistence with PostgreSQL and ORM, and cloud deployment using Docker.',
-        image: '/images/sistema-gestion.png',
-        repo: 'https://github.com/Eduardo1300/Aplicacion-de-Registros-de-Empleados',
-        demo: 'https://gestion.christophervaldivia.me/'
       }
     ],
     aboutText:
