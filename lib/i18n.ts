@@ -28,9 +28,9 @@ export const dictionary = {
         demo: 'https://tienda.christophervaldivia.me/'
       },
       { 
-        title: 'TaskFlow – Gestor de Tareas Colaborativo con IA', 
+        title: 'TaskFlow – Gestor de Tareas', 
         stack: 'Vue + TypeScript + NestJS + Tailwind CSS',
-        description: 'Sistema de gestión de tareas colaborativo en tiempo real con inteligencia artificial. Autenticación segura, colaboración en vivo, múltiples vistas (Dashboard, Kanban, Calendario, Analytics). IA para recomendaciones y análisis de productividad. Sincronización offline con PWA. Análisis detallado con gráficos e insights personalizados. Interfaz responsive con modo oscuro incluido y construida con Vue.',
+        description: 'Sistema de gestión de tareas con autenticación segura, múltiples vistas (Dashboard, Kanban, Calendario, Analytics). Análisis detallado con gráficos e insights personalizados. Interfaz responsive con modo oscuro incluido y construida con Vue.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
     demo: 'https://taskflow.christophervaldivia.me/'
@@ -151,9 +151,9 @@ export const dictionary = {
         demo: 'https://tienda.christophervaldivia.me/'
       },
       { 
-        title: 'TaskFlow – AI-Powered Collaborative Task Manager', 
+        title: 'TaskFlow – Task Manager', 
         stack: 'Vue + TypeScript + NestJS + Tailwind CSS',
-        description: 'Collaborative real-time task management system with artificial intelligence. Secure authentication, live collaboration, multiple views (Dashboard, Kanban, Calendar, Analytics). AI-powered recommendations and productivity analysis. Offline sync with PWA technology. Detailed analytics with charts and personalized insights. Responsive interface with dark mode support and built with Vue.',
+        description: 'Task management system with secure authentication, multiple views (Dashboard, Kanban, Calendar, Analytics). Detailed analytics with charts and personalized insights. Responsive interface with dark mode support and built with Vue.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
     demo: 'https://taskflow.christophervaldivia.me/'
