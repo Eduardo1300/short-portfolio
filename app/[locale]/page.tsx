@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback, useRef } from 'react'
 import { useParams } from 'next/navigation'
+import Link from 'next/link'
 import Hero from '@/components/Hero'
 import Contact from '@/components/Contact'
 import Technologies from '@/components/Technologies'
@@ -142,14 +143,14 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-              <a
+              <Link
                 href={locale === 'es' ? '/en' : '/es'}
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-cyan-400/30 bg-cyan-400/10 hover:bg-cyan-400/20 transition text-xs md:text-sm text-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900"
                 aria-label={locale === 'es' ? 'Cambiar a inglés' : 'Switch to Spanish'}
               >
                 <FiGlobe aria-hidden="true" />
                 {locale === 'es' ? 'EN' : 'ES'}
-              </a>
+              </Link>
             </div>
           </nav>
         </header>
