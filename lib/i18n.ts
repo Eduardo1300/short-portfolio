@@ -9,38 +9,38 @@ export const dictionary = {
     projects: 'Proyectos',
     about: 'Sobre mí',
     contact: 'Contacto',
-    role: 'Desarrollador Full Stack',
-    education: 'Técnico en Computación e Informática',
+    role: 'Backend Developer | NestJS · TypeScript · PostgreSQL · Docker · AWS',
+    education: 'Computación e Informática (Egresado) - Cibertec',
     location: 'Lima, Perú',
     phone: '+51 953 587 619',
     email: 'eduardovaldivia1300@gmail.com',
     github: 'GitHub',
     linkedin: 'LinkedIn',
     downloadCv: 'Ver CV',
-    availability: 'Disponibilidad para prácticas y proyectos freelance',
+    availability: 'Disponibilidad para proyectos freelance y tiempo completo',
     projectsList: [
       { 
-        title: 'Tienda Online Full Stack', 
-        stack: 'Vue + NestJS + PostgreSQL',
-          description: 'Sistema completo de tienda. Incluye autenticación segura con JWT, gestión de productos, carrito de compras persistente y control de órdenes, todo construido con arquitectura moderna y diseño responsive usando TailwindCSS y Vue.',
+        title: 'E-commerce Clothing Store – Microservicio de Comercio Electrónico', 
+        stack: 'NestJS · TypeScript · PostgreSQL · Docker · TypeORM · Tailwind CSS',
+          description: 'Arquitectura backend para catálogo de productos, gestión de órdenes de compra y control de inventario con manejo de estados. Implementación de filtros globales de excepción, pipes de validación y control de autorización multi-rol (Admin / User). Entorno contenerizado con Docker listo para producción y persistencia relacional optimizada.',
         image: '/images/tienda.png',
     repo: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
         demo: 'https://tienda.christophervaldivia.me/'
       },
       { 
-        title: 'TaskFlow – Gestor de Tareas', 
-        stack: 'Vue + TypeScript + NestJS + Tailwind CSS',
-        description: 'Sistema de gestión de tareas con autenticación segura, múltiples vistas (Dashboard, Kanban, Calendario, Analytics). Análisis detallado con gráficos e insights personalizados. Interfaz responsive con modo oscuro incluido y construida con Vue.',
+        title: 'TaskFlow – Plataforma de Gestión de Tareas', 
+        stack: 'NestJS · TypeScript · PostgreSQL · Docker · JWT · TypeORM',
+        description: 'API REST desacoplada con arquitectura modular, control de acceso basado en roles (RBAC) y autenticación segura con JWT. Modelado relacional en PostgreSQL con transacciones ACID para la persistencia consistente de flujos concurrentes (tareas, tableros y estados). Contenerización completa con Docker Compose (API + PostgreSQL), testing automatizado y despliegue en producción con documentación interactiva en Swagger.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
-    demo: 'https://taskflow.christophervaldivia.me/'
-    }
+        demo: 'https://taskflow.christophervaldivia.me/'
+      }
     ],
     aboutText:
-      'Apasionado por el desarrollo web moderno y la creación de soluciones digitales innovadoras. Me motiva resolver problemas complejos con código limpio y arquitecturas escalables. Busco oportunidades para crecer en equipos dinámicos trabajando en proyectos que generen impacto real en los usuarios.',
+      'Desarrollador Backend especializado en Node.js, NestJS y TypeScript con experiencia en entornos de producción. Especializado en el diseño e implementación de APIs modulares (REST y GraphQL), modelado relacional y optimización de consultas en PostgreSQL, y despliegue de microservicios con Docker sobre infraestructura AWS (EC2, RDS). Con sólidos fundamentos en arquitectura limpia, testing automatizado y comprensión integral del consumo de datos en interfaces frontend (Vue.js, React).',
     profileSection: {
       title: 'Perfil Profesional',
-      content: 'Desarrollador Full Stack con sólida base en tecnologías modernas. Combino creatividad técnica con enfoque en la experiencia del usuario, especialmente con Vue y su ecosistema. Siempre dispuesto a aprender nuevas tecnologías y metodologías para crear soluciones web robustas y escalables.'
+      content: 'Desarrollador Backend especializado en Node.js, NestJS y TypeScript con experiencia en entornos de producción. Especializado en el diseño e implementación de APIs modulares (REST y GraphQL), modelado relacional y optimización de consultas en PostgreSQL, y despliegue de microservicios con Docker sobre infraestructura AWS (EC2, RDS). Con sólidos fundamentos en arquitectura limpia, testing automatizado y comprensión integral del consumo de datos en interfaces frontend (Vue.js, React).'
       },
       contactLabelEmail: '📧',
     contactLabelPhone: '📞',
@@ -48,41 +48,34 @@ export const dictionary = {
     experiences: 'Experiencia',
     experienceItems: [
       {
-        title: 'Desarrollador Full Stack Node.js – Aynitech',
+        title: 'Desarrollador Backend / Software Engineer – Aynitech',
         period: 'Dic 2025 – Actualidad',
         isCurrent: true,
         bullets: [
-          'Desarrollo de aplicaciones Full Stack con Node.js, NestJS, TypeScript y Vue.js en entornos productivos.',
-          'Diseño e implementación de APIs REST escalables con autenticación JWT y validaciones.',
-          'Gestión de bases de datos PostgreSQL y MongoDB con optimizaciones de rendimiento.',
-          'Despliegue y mantenimiento de aplicaciones en AWS.'
+          'Diseño, construcción y mantenimiento de APIs modulares y microservicios con NestJS y TypeScript bajo principios de Clean Architecture y validación estricta con DTOs.',
+          'Modelado de bases de datos relacionales y optimización de consultas SQL en PostgreSQL, mejorando los tiempos de respuesta y concurrencia de servicios críticos.',
+          'Implementación de contratos de API REST/GraphQL y colaboración técnica para su integración fluida con aplicaciones cliente en Vue.js.',
+          'Configuración y mantenimiento de despliegues contenerizados con Docker sobre instancias AWS (EC2, RDS) para entornos de producción.',
+          'Automatización de flujos de integración y despliegue continuo (CI/CD) para garantizar la estabilidad del software en producción.'
         ]
       },
       {
-        title: 'Desarrollador Web – NHL Decoracion Comercial',
-          period: 'Sept. 2025 – Diciembre 2025',
+        title: 'Desarrollador Web / Integrador de APIs – NHL Decoración Comercial',
+          period: 'Sep 2025 – Dic 2025',
         bullets: [
-          'Implementé interfaces web con React, Tailwind CSS, Laravel (Blade) y Next.js (TypeScript/JSX).',
-          'Diseños responsivos y animaciones con CSS, Tailwind y Framer Motion, mejorando UX.',
-          'Optimización de rendimiento y SEO, asegurando entregas alineadas con identidad visual corporativa.'
+          'Integración y consumo de APIs de negocio garantizando manejo consistente de estados, validaciones y tratamiento de excepciones HTTP.',
+          'Implementación de interfaces interactivas y componentes modulares utilizando React, Next.js y TypeScript.',
+          'Optimización de rendimiento web, tiempos de carga y buenas prácticas de accesibilidad técnica.'
         ]
       },
       {
-          title: 'Desarrollador de Aplicaciones – DevDatep Consulting',
-          period: 'Junio 2025 – Noviembre 2025',
+          title: 'Desarrollador Backend Java / Software Engineer – DevDatep Consulting',
+          period: 'Jun 2025 – Nov 2025',
         bullets: [
-          'Coordiné proyectos ágiles (Scrum), liderando equipos y asegurando entregas eficientes.',
-          'Desarrollé aplicaciones empresariales con Jmix, Spring Boot, Vaadin, JavaScript y PHP.',
-          'Administré bases de datos MySQL, asegurando integridad y escalabilidad.'
-        ]
-      },
-      {
-        title: 'Diseñador Web – LicitApp',
-        period: 'Junio 2025 – Septiembre 2025',
-        bullets: [
-         'Desarrollo web en WordPress, HTML, CSS y JavaScript con funcionalidades personalizadas.',
-         'Diseño responsivo y optimización de interfaces visuales para navegación fluida.',
-         'Gestión de plugins y temas personalizados según requerimientos del cliente.'
+          'Desarrollo de servicios empresariales y lógica de negocio backend utilizando Java (Spring Boot) con persistencia relacional en MySQL.',
+          'Diseño, normalización y optimización de esquemas de bases de datos para sistemas internos de alta transaccionalidad.',
+          'Refactorización de código legado implementando patrones de diseño orientados a mejorar la mantenibilidad y el rendimiento.',
+          'Trabajo en células ágiles bajo metodología Scrum con control de versiones y flujos de revisión de código en Git.'
         ]
       }
     ],
@@ -95,32 +88,33 @@ export const dictionary = {
   items: {
         frontend: [
           { name: 'Vue.js 💚', level: 'Avanzado' },
-          { name: 'Nuxt.js 🟠', level: 'Intermedio' },
-          { name: 'Angular 🅰️', level: 'Básico' },
-          { name: 'TypeScript 🟦', level: 'Intermedio' },
+          { name: 'React ⚛️', level: 'Avanzado' },
+          { name: 'Next.js ▲', level: 'Avanzado' },
+          { name: 'TypeScript 🟦', level: 'Avanzado' },
           { name: 'Tailwind CSS 🎨', level: 'Avanzado' }
         ],
         backend: [
-          { name: 'Node.js 🌐', level: 'Intermedio' },
-          { name: 'NestJS 🛠️', level: 'Intermedio' },
-          { name: 'Laravel 🔴', level: 'Intermedio' },
-          { name: 'Java ☕', level: 'Básico' },
-          { name: 'PHP 🐘', level: 'Básico' }
+          { name: 'NestJS 🛠️', level: 'Avanzado' },
+          { name: 'Node.js 🌐', level: 'Avanzado' },
+          { name: 'TypeScript 🟦', level: 'Avanzado' },
+          { name: 'Java (Spring Boot) ☕', level: 'Intermedio' },
+          { name: 'PHP (Laravel) 🔴', level: 'Intermedio' },
+          { name: 'Express 🚀', level: 'Intermedio' }
         ],
         database: [
-          { name: 'MySQL 🟦', level: 'Básico' },
-          { name: 'PostgreSQL 🐘', level: 'Básico' },
-          { name: 'MongoDB 🍃', level: 'Básico' },
-          { name: 'SQL Server 🟥', level: 'Básico' },
-          { name: 'MariaDB 🟨', level: 'Básico' }
+          { name: 'PostgreSQL 🐘', level: 'Avanzado' },
+          { name: 'MySQL 🟦', level: 'Avanzado' },
+          { name: 'TypeORM 📦', level: 'Avanzado' },
+          { name: 'Prisma 🔷', level: 'Intermedio' }
         ],
         devops: [
-          { name: 'Docker 🐳', level: 'Básico' },
-          { name: 'Vercel 🔷', level: 'Intermedio' },
-          { name: 'Render 🟦', level: 'Intermedio' },
-          { name: 'AWS ☁️', level: 'Básico' },
-          { name: 'Git/GitHub 🔁', level: 'Avanzado' },
-          { name: 'CI/CD (GitHub Actions) 🚀', level: 'Básico' }
+          { name: 'Docker 🐳', level: 'Avanzado' },
+          { name: 'Docker Compose 🐳', level: 'Avanzado' },
+          { name: 'AWS (EC2, RDS) ☁️', level: 'Intermedio' },
+          { name: 'Git / GitHub 🔁', level: 'Avanzado' },
+          { name: 'GitHub Actions (CI/CD) 🚀', level: 'Intermedio' },
+          { name: 'Jest 🧪', level: 'Intermedio' },
+          { name: 'Swagger (OpenAPI) 📋', level: 'Intermedio' }
         ]
       }
     },
@@ -132,38 +126,38 @@ export const dictionary = {
     projects: 'Projects',
     about: 'About',
     contact: 'Contact',
-    role: 'Full Stack Developer',
-    education: 'Computer Science and Information Technology Technician',
+    role: 'Backend Developer | NestJS · TypeScript · PostgreSQL · Docker · AWS',
+    education: 'Computer Science and Information Technology (Graduate) - Cibertec',
     location: 'Lima, Peru',
     phone: '+51 953 587 619',
     email: 'eduardovaldivia1300@gmail.com',
     github: 'GitHub',
     linkedin: 'LinkedIn',
     downloadCv: 'View CV',
-    availability: 'Available for internships and freelance projects',
+    availability: 'Available for freelance and full-time projects',
     projectsList: [
       {
-        title: 'Full Stack Online Store', 
-        stack: 'Vue + NestJS + PostgreSQL',
-        description: 'Complete store system. Includes secure JWT authentication, product management, persistent shopping cart, and order control—all built with a modern architecture and responsive design using TailwindCSS and Vue.',
+        title: 'E-commerce Clothing Store – E-commerce Microservice', 
+        stack: 'NestJS · TypeScript · PostgreSQL · Docker · TypeORM · Tailwind CSS',
+        description: 'Backend architecture for product catalog, purchase order management, and inventory control with state handling. Implementation of global exception filters, validation pipes, and multi-role authorization control (Admin / User). Containerized environment with Docker ready for production and optimized relational persistence.',
         image: '/images/tienda.png',
     repo: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
         demo: 'https://tienda.christophervaldivia.me/'
       },
       { 
-        title: 'TaskFlow – Task Manager', 
-        stack: 'Vue + TypeScript + NestJS + Tailwind CSS',
-        description: 'Task management system with secure authentication, multiple views (Dashboard, Kanban, Calendar, Analytics). Detailed analytics with charts and personalized insights. Responsive interface with dark mode support and built with Vue.',
+        title: 'TaskFlow – Task Management Platform', 
+        stack: 'NestJS · TypeScript · PostgreSQL · Docker · JWT · TypeORM',
+        description: 'Decoupled REST API with modular architecture, role-based access control (RBAC), and secure JWT authentication. Relational modeling in PostgreSQL with ACID transactions for consistent persistence of concurrent flows (tasks, boards, and states). Full containerization with Docker Compose (API + PostgreSQL), automated testing, and production deployment with interactive Swagger documentation.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
-    demo: 'https://taskflow.christophervaldivia.me/'
+        demo: 'https://taskflow.christophervaldivia.me/'
       }
     ],
     aboutText:
-      'Passionate about modern web development and creating innovative digital solutions. I\'m motivated by solving complex problems with clean code and scalable architectures. I seek opportunities to grow in dynamic teams working on projects that generate real impact for users.',
+      'Backend Developer specialized in Node.js, NestJS, and TypeScript with experience in production environments. Expert in designing and implementing modular APIs (REST and GraphQL), relational modeling and query optimization in PostgreSQL, and deploying microservices with Docker on AWS infrastructure (EC2, RDS). Strong foundations in clean architecture, automated testing, and comprehensive understanding of data consumption in frontend interfaces (Vue.js, React).',
     profileSection: {
       title: 'Professional Profile',
-      content: 'Full Stack Developer with solid foundation in modern technologies. I combine technical creativity with user experience focus, especially with Vue and its ecosystem. Always willing to learn new technologies and methodologies to create robust and scalable web solutions.'
+      content: 'Backend Developer specialized in Node.js, NestJS, and TypeScript with experience in production environments. Expert in designing and implementing modular APIs (REST and GraphQL), relational modeling and query optimization in PostgreSQL, and deploying microservices with Docker on AWS infrastructure (EC2, RDS). Strong foundations in clean architecture, automated testing, and comprehensive understanding of data consumption in frontend interfaces (Vue.js, React).'
     },
     contactLabelEmail: '📧',
     contactLabelPhone: '📞',
@@ -171,40 +165,34 @@ export const dictionary = {
     experiences: 'Experience',
     experienceItems: [
       {
-        title: 'Full Stack Node.js Developer – Aynitech',
+        title: 'Backend Developer / Software Engineer – Aynitech',
         period: 'Dec 2025 – Present',
+        isCurrent: true,
         bullets: [
-          'Development of Full Stack applications with Node.js, NestJS, TypeScript, and Vue.js in production environments.',
-          'Design and implementation of scalable REST APIs with JWT authentication and validations.',
-          'Management of PostgreSQL and MongoDB databases with performance optimizations.',
-          'Deployment and maintenance of applications on AWS.'
+          'Design, construction, and maintenance of modular APIs and microservices with NestJS and TypeScript following Clean Architecture principles and strict validation with DTOs.',
+          'Relational database modeling and SQL query optimization in PostgreSQL, improving response times and concurrency of critical services.',
+          'Implementation of REST/GraphQL API contracts and technical collaboration for seamless integration with Vue.js client applications.',
+          'Configuration and maintenance of containerized deployments with Docker on AWS instances (EC2, RDS) for production environments.',
+          'Automation of continuous integration and deployment flows (CI/CD) to ensure software stability in production.'
         ]
       },
       {
-        title: 'Web Developer – NHL Decoracion Comercial',
-          period: 'Sept. 2025 – December 2025',
+        title: 'Web Developer / API Integrator – NHL Decoración Comercial',
+          period: 'Sep 2025 – Dec 2025',
         bullets: [
-          'Implemented web interfaces with React, Tailwind CSS, Laravel (Blade), and Next.js (TypeScript/JSX).',
-          'Responsive designs and animations with CSS, Tailwind, and Framer Motion, enhancing UX.',
-          'Performance and SEO optimization, ensuring deliverables aligned with corporate visual identity.'
+          'Integration and consumption of business APIs ensuring consistent state management, validations, and HTTP exception handling.',
+          'Implementation of interactive interfaces and modular components using React, Next.js, and TypeScript.',
+          'Web performance optimization, load times, and technical accessibility best practices.'
         ]
       },
       {
-          title: 'Application Development Developer – DevDatep Consulting',
-          period: 'June 2025 – November 2025',
+          title: 'Backend Java Developer / Software Engineer – DevDatep Consulting',
+          period: 'Jun 2025 – Nov 2025',
         bullets: [
-          'Coordinated agile projects (Scrum), leading teams and ensuring efficient deliveries.',
-          'Developed enterprise applications with Jmix, Spring Boot, Vaadin, JavaScript, and PHP.',
-          'Administered MySQL databases, ensuring integrity and scalability.'
-        ]
-      },
-      {
-        title: 'Web Designer – LicitApp',
-        period: 'June 2025 – September 2025',
-        bullets: [
-         'Web development in WordPress, HTML, CSS, and JavaScript with custom functionalities.',
-         'Responsive design and optimization of visual interfaces for smooth navigation.',
-         'Management of custom plugins and themes according to client requirements.'
+          'Development of enterprise services and backend business logic using Java (Spring Boot) with relational persistence in MySQL.',
+          'Design, normalization, and optimization of database schemas for high-transaction internal systems.',
+          'Legacy code refactoring implementing design patterns oriented to improve maintainability and performance.',
+          'Work in agile cells under Scrum methodology with version control and code review flows in Git.'
         ]
       }
     ],
@@ -217,32 +205,33 @@ export const dictionary = {
   items: {
         frontend: [
           { name: 'Vue.js 💚', level: 'Advanced' },
-          { name: 'Nuxt.js 🟠', level: 'Intermediate' },
-          { name: 'Angular 🅰️', level: 'Basic' },
-          { name: 'TypeScript 🟦', level: 'Intermediate' },
+          { name: 'React ⚛️', level: 'Advanced' },
+          { name: 'Next.js ▲', level: 'Advanced' },
+          { name: 'TypeScript 🟦', level: 'Advanced' },
           { name: 'Tailwind CSS 🎨', level: 'Advanced' }
         ],
         backend: [
-          { name: 'Node.js 🌐', level: 'Intermediate' },
-          { name: 'NestJS 🛠️', level: 'Intermediate' },
-          { name: 'Laravel 🔴', level: 'Intermediate' },
-          { name: 'Java ☕', level: 'Basic' },
-          { name: 'PHP 🐘', level: 'Basic' }
+          { name: 'NestJS 🛠️', level: 'Advanced' },
+          { name: 'Node.js 🌐', level: 'Advanced' },
+          { name: 'TypeScript 🟦', level: 'Advanced' },
+          { name: 'Java (Spring Boot) ☕', level: 'Intermediate' },
+          { name: 'PHP (Laravel) 🔴', level: 'Intermediate' },
+          { name: 'Express 🚀', level: 'Intermediate' }
         ],
         database: [
-                  { name: 'MySQL 🟦', level: 'Basic' },
-                  { name: 'PostgreSQL 🐘', level: 'Basic' },
-                  { name: 'MongoDB 🍃', level: 'Basic' },
-                  { name: 'SQL Server 🟥', level: 'Basic' },
-                  { name: 'MariaDB 🟨', level: 'Basic' }
+          { name: 'PostgreSQL 🐘', level: 'Advanced' },
+          { name: 'MySQL 🟦', level: 'Advanced' },
+          { name: 'TypeORM 📦', level: 'Advanced' },
+          { name: 'Prisma 🔷', level: 'Intermediate' }
         ],
         devops: [
-          { name: 'Docker 🐳', level: 'Basic' },
-          { name: 'Vercel 🔷', level: 'Intermediate' },
-          { name: 'Render 🟦', level: 'Intermediate' },
-          { name: 'AWS ☁️', level: 'Basic' },
-          { name: 'Git/GitHub 🔁', level: 'Advanced' },
-          { name: 'CI/CD (GitHub Actions) 🚀', level: 'Basic' }
+          { name: 'Docker 🐳', level: 'Advanced' },
+          { name: 'Docker Compose 🐳', level: 'Advanced' },
+          { name: 'AWS (EC2, RDS) ☁️', level: 'Intermediate' },
+          { name: 'Git / GitHub 🔁', level: 'Advanced' },
+          { name: 'GitHub Actions (CI/CD) 🚀', level: 'Intermediate' },
+          { name: 'Jest 🧪', level: 'Intermediate' },
+          { name: 'Swagger (OpenAPI) 📋', level: 'Intermediate' }
         ]
       }
     },
