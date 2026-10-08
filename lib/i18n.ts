@@ -16,7 +16,7 @@ export const dictionary = {
     email: 'eduardovaldivia1300@gmail.com',
     github: 'GitHub',
     linkedin: 'LinkedIn',
-    downloadCv: 'Descargar CV',
+    downloadCv: 'Ver CV',
     availability: 'Disponibilidad para prácticas y proyectos freelance',
     projectsList: [
       { 
@@ -139,7 +139,7 @@ export const dictionary = {
     email: 'eduardovaldivia1300@gmail.com',
     github: 'GitHub',
     linkedin: 'LinkedIn',
-    downloadCv: 'Download CV',
+    downloadCv: 'View CV',
     availability: 'Available for internships and freelance projects',
     projectsList: [
       {
