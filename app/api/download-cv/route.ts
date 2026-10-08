@@ -10,12 +10,12 @@ export async function GET() {
     return new NextResponse(fileBuffer, {
       headers: {
         'Content-Type': 'application/pdf',
-        'Content-Disposition': 'attachment; filename="EduardoValdivia_CV.pdf"',
+        'Content-Disposition': 'inline; filename="EduardoValdivia_CV.pdf"',
         'Cache-Control': 'public, max-age=86400',
       },
     })
   } catch (error) {
-    console.error('Error downloading CV:', error)
+    console.error('Error viewing CV:', error)
     return NextResponse.json(
       { error: 'File not found' },
       { status: 404 }
