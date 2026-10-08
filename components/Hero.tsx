@@ -2,7 +2,8 @@
 
 import { memo } from 'react'
 import { dictionary, Locale } from '@/lib/i18n'
-import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'
+import Link from 'next/link'
+import { FaGithub, FaLinkedin, FaFileAlt } from 'react-icons/fa'
 
 function Hero({ locale }: { locale: Locale }) {
   const t = dictionary[locale]
@@ -63,18 +64,17 @@ function Hero({ locale }: { locale: Locale }) {
         </a>
       </nav>
 
-      <a
-        href="/api/download-cv"
-        download="EduardoValdivia_CV.pdf"
+      <Link
+        href={`/${locale}/cv`}
         className="social-btn download flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium w-full justify-center text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900"
-        aria-label={locale === 'es' 
-          ? 'Descargar currículum de Christopher Valdivia en PDF'
-          : 'Download Christopher Valdivia resume in PDF'
+        aria-label={locale === 'es'
+          ? 'Ver currículum de Christopher Valdivia'
+          : 'View Christopher Valdivia resume'
         }
       >
-        <FaDownload aria-hidden="true" />
+        <FaFileAlt aria-hidden="true" />
         {t.downloadCv}
-      </a>
+      </Link>
     </div>
   )
 }
