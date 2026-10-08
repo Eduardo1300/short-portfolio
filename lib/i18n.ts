@@ -52,30 +52,29 @@ export const dictionary = {
         period: 'Dic 2025 – Actualidad',
         isCurrent: true,
         bullets: [
-          'Diseño, construcción y mantenimiento de APIs modulares y microservicios con NestJS y TypeScript bajo principios de Clean Architecture y validación estricta con DTOs.',
-          'Modelado de bases de datos relacionales y optimización de consultas SQL en PostgreSQL, mejorando los tiempos de respuesta y concurrencia de servicios críticos.',
-          'Implementación de contratos de API REST/GraphQL y colaboración técnica para su integración fluida con aplicaciones cliente en Vue.js.',
-          'Configuración y mantenimiento de despliegues contenerizados con Docker sobre instancias AWS (EC2, RDS) para entornos de producción.',
-          'Automatización de flujos de integración y despliegue continuo (CI/CD) para garantizar la estabilidad del software en producción.'
+          'APIs modulares y microservicios con NestJS/TypeScript (Clean Architecture, DTOs).',
+          'Modelado y optimización SQL en PostgreSQL para alta concurrencia.',
+          'Contratos REST/GraphQL e integración con frontend Vue.js.',
+          'Despliegues Docker en AWS (EC2, RDS) y CI/CD con GitHub Actions.'
         ]
       },
       {
         title: 'Desarrollador Web / Integrador de APIs – NHL Decoración Comercial',
           period: 'Sep 2025 – Dic 2025',
         bullets: [
-          'Integración y consumo de APIs de negocio garantizando manejo consistente de estados, validaciones y tratamiento de excepciones HTTP.',
-          'Implementación de interfaces interactivas y componentes modulares utilizando React, Next.js y TypeScript.',
-          'Optimización de rendimiento web, tiempos de carga y buenas prácticas de accesibilidad técnica.'
+          'Integración y consumo de APIs REST con manejo de estados y errores HTTP.',
+          'Interfaces React/Next.js/TypeScript: componentes modulares y accesibles.',
+          'Optimización de rendimiento web (Core Web Vitals, carga, bundle).'
         ]
       },
       {
-          title: 'Desarrollador Backend Java / Software Engineer – DevDatep Consulting',
+          title: 'Desarrollador Backend Java – DevDatep Consulting',
           period: 'Jun 2025 – Nov 2025',
         bullets: [
-          'Desarrollo de servicios empresariales y lógica de negocio backend utilizando Java (Spring Boot) con persistencia relacional en MySQL.',
-          'Diseño, normalización y optimización de esquemas de bases de datos para sistemas internos de alta transaccionalidad.',
-          'Refactorización de código legado implementando patrones de diseño orientados a mejorar la mantenibilidad y el rendimiento.',
-          'Trabajo en células ágiles bajo metodología Scrum con control de versiones y flujos de revisión de código en Git.'
+          'Servicios backend con Spring Boot y MySQL (alta transaccionalidad).',
+          'Diseño/normalización de esquemas relacionales y optimización de queries.',
+          'Refactorización legacy con patrones de diseño (mantenibilidad/rendimiento).',
+          'Metodología Scrum: Git flow, code review, testing.'
         ]
       }
     ],
@@ -169,30 +168,29 @@ export const dictionary = {
         period: 'Dec 2025 – Present',
         isCurrent: true,
         bullets: [
-          'Design, construction, and maintenance of modular APIs and microservices with NestJS and TypeScript following Clean Architecture principles and strict validation with DTOs.',
-          'Relational database modeling and SQL query optimization in PostgreSQL, improving response times and concurrency of critical services.',
-          'Implementation of REST/GraphQL API contracts and technical collaboration for seamless integration with Vue.js client applications.',
-          'Configuration and maintenance of containerized deployments with Docker on AWS instances (EC2, RDS) for production environments.',
-          'Automation of continuous integration and deployment flows (CI/CD) to ensure software stability in production.'
+          'Modular APIs and microservices with NestJS/TypeScript (Clean Architecture, DTOs).',
+          'Relational modeling & SQL optimization in PostgreSQL for high concurrency.',
+          'REST/GraphQL contracts & seamless Vue.js frontend integration.',
+          'Docker deployments on AWS (EC2, RDS) & CI/CD with GitHub Actions.'
         ]
       },
       {
         title: 'Web Developer / API Integrator – NHL Decoración Comercial',
           period: 'Sep 2025 – Dec 2025',
         bullets: [
-          'Integration and consumption of business APIs ensuring consistent state management, validations, and HTTP exception handling.',
-          'Implementation of interactive interfaces and modular components using React, Next.js, and TypeScript.',
-          'Web performance optimization, load times, and technical accessibility best practices.'
+          'REST API integration/consumption with consistent state & error handling.',
+          'React/Next.js/TypeScript: modular components & accessibility.',
+          'Web performance optimization (Core Web Vitals, load times, bundle).'
         ]
       },
       {
-          title: 'Backend Java Developer / Software Engineer – DevDatep Consulting',
+          title: 'Backend Java Developer – DevDatep Consulting',
           period: 'Jun 2025 – Nov 2025',
         bullets: [
-          'Development of enterprise services and backend business logic using Java (Spring Boot) with relational persistence in MySQL.',
-          'Design, normalization, and optimization of database schemas for high-transaction internal systems.',
-          'Legacy code refactoring implementing design patterns oriented to improve maintainability and performance.',
-          'Work in agile cells under Scrum methodology with version control and code review flows in Git.'
+          'Spring Boot/MySQL backend services for high-transaction systems.',
+          'Relational schema design/normalization & query optimization.',
+          'Legacy refactoring with design patterns (maintainability/performance).',
+          'Scrum: Git flow, code review, testing.'
         ]
       }
     ],
