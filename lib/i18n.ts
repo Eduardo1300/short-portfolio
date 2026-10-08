@@ -22,7 +22,7 @@ export const dictionary = {
       { 
         title: 'E-commerce Clothing Store – Microservicio de Comercio Electrónico', 
         stack: 'NestJS · TypeScript · PostgreSQL · Docker · TypeORM · Tailwind CSS',
-          description: 'Arquitectura backend para catálogo de productos, gestión de órdenes de compra y control de inventario con manejo de estados. Implementación de filtros globales de excepción, pipes de validación y control de autorización multi-rol (Admin / User). Entorno contenerizado con Docker listo para producción y persistencia relacional optimizada.',
+          description: 'Backend: catálogo productos, órdenes, inventario con estados. Filtros de excepción, pipes validación, auth multi-rol (Admin/User). Docker listo para producción, PostgreSQL optimizado.',
         image: '/images/tienda.png',
     repo: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
         demo: 'https://tienda.christophervaldivia.me/'
@@ -30,17 +30,17 @@ export const dictionary = {
       { 
         title: 'TaskFlow – Plataforma de Gestión de Tareas', 
         stack: 'NestJS · TypeScript · PostgreSQL · Docker · JWT · TypeORM',
-        description: 'API REST desacoplada con arquitectura modular, control de acceso basado en roles (RBAC) y autenticación segura con JWT. Modelado relacional en PostgreSQL con transacciones ACID para la persistencia consistente de flujos concurrentes (tareas, tableros y estados). Contenerización completa con Docker Compose (API + PostgreSQL), testing automatizado y despliegue en producción con documentación interactiva en Swagger.',
+        description: 'REST API modular con RBAC y JWT. PostgreSQL con transacciones ACID (tareas, tableros, estados). Docker Compose, testing automatizado, Swagger en producción.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
         demo: 'https://taskflow.christophervaldivia.me/'
       }
     ],
     aboutText:
-      'Desarrollador Backend especializado en Node.js, NestJS y TypeScript con experiencia en entornos de producción. Especializado en el diseño e implementación de APIs modulares (REST y GraphQL), modelado relacional y optimización de consultas en PostgreSQL, y despliegue de microservicios con Docker sobre infraestructura AWS (EC2, RDS). Con sólidos fundamentos en arquitectura limpia, testing automatizado y comprensión integral del consumo de datos en interfaces frontend (Vue.js, React).',
+      'Backend Developer (NestJS, TypeScript, PostgreSQL, Docker, AWS). APIs modulares REST/GraphQL, modelado relacional, optimización SQL, microservicios en AWS. Clean Architecture, testing, integración frontend (Vue/React).',
     profileSection: {
       title: 'Perfil Profesional',
-      content: 'Desarrollador Backend especializado en Node.js, NestJS y TypeScript con experiencia en entornos de producción. Especializado en el diseño e implementación de APIs modulares (REST y GraphQL), modelado relacional y optimización de consultas en PostgreSQL, y despliegue de microservicios con Docker sobre infraestructura AWS (EC2, RDS). Con sólidos fundamentos en arquitectura limpia, testing automatizado y comprensión integral del consumo de datos en interfaces frontend (Vue.js, React).'
+      content: 'Backend Developer (NestJS, TypeScript, PostgreSQL, Docker, AWS). APIs modulares REST/GraphQL, modelado relacional, optimización SQL, microservicios en AWS. Clean Architecture, testing, integración frontend (Vue/React).'
       },
       contactLabelEmail: '📧',
     contactLabelPhone: '📞',
@@ -138,7 +138,7 @@ export const dictionary = {
       {
         title: 'E-commerce Clothing Store – E-commerce Microservice', 
         stack: 'NestJS · TypeScript · PostgreSQL · Docker · TypeORM · Tailwind CSS',
-        description: 'Backend architecture for product catalog, purchase order management, and inventory control with state handling. Implementation of global exception filters, validation pipes, and multi-role authorization control (Admin / User). Containerized environment with Docker ready for production and optimized relational persistence.',
+        description: 'Backend: product catalog, orders, inventory with state handling. Exception filters, validation pipes, multi-role auth (Admin/User). Docker production-ready, optimized PostgreSQL.',
         image: '/images/tienda.png',
     repo: 'https://github.com/Eduardo1300/proyecto-tienda-ropa',
         demo: 'https://tienda.christophervaldivia.me/'
@@ -146,17 +146,17 @@ export const dictionary = {
       { 
         title: 'TaskFlow – Task Management Platform', 
         stack: 'NestJS · TypeScript · PostgreSQL · Docker · JWT · TypeORM',
-        description: 'Decoupled REST API with modular architecture, role-based access control (RBAC), and secure JWT authentication. Relational modeling in PostgreSQL with ACID transactions for consistent persistence of concurrent flows (tasks, boards, and states). Full containerization with Docker Compose (API + PostgreSQL), automated testing, and production deployment with interactive Swagger documentation.',
+        description: 'Modular REST API with RBAC & JWT. PostgreSQL ACID transactions (tasks, boards, states). Docker Compose, automated testing, Swagger in production.',
         image: '/images/taskflow.png',
     repo: 'https://github.com/Eduardo1300/taskflow-app',
         demo: 'https://taskflow.christophervaldivia.me/'
       }
     ],
     aboutText:
-      'Backend Developer specialized in Node.js, NestJS, and TypeScript with experience in production environments. Expert in designing and implementing modular APIs (REST and GraphQL), relational modeling and query optimization in PostgreSQL, and deploying microservices with Docker on AWS infrastructure (EC2, RDS). Strong foundations in clean architecture, automated testing, and comprehensive understanding of data consumption in frontend interfaces (Vue.js, React).',
+      'Backend Developer (NestJS, TypeScript, PostgreSQL, Docker, AWS). Modular REST/GraphQL APIs, relational modeling, SQL optimization, microservices on AWS. Clean Architecture, testing, frontend integration (Vue/React).',
     profileSection: {
       title: 'Professional Profile',
-      content: 'Backend Developer specialized in Node.js, NestJS, and TypeScript with experience in production environments. Expert in designing and implementing modular APIs (REST and GraphQL), relational modeling and query optimization in PostgreSQL, and deploying microservices with Docker on AWS infrastructure (EC2, RDS). Strong foundations in clean architecture, automated testing, and comprehensive understanding of data consumption in frontend interfaces (Vue.js, React).'
+      content: 'Backend Developer (NestJS, TypeScript, PostgreSQL, Docker, AWS). Modular REST/GraphQL APIs, relational modeling, SQL optimization, microservices on AWS. Clean Architecture, testing, frontend integration (Vue/React).'
     },
     contactLabelEmail: '📧',
     contactLabelPhone: '📞',
