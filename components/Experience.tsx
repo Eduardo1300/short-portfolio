@@ -26,6 +26,7 @@ function Experience({ locale }: { locale: Locale }) {
         {experienceItems.map((exp: { title: string; period: string; bullets: readonly string[] }, idx: number) => {
           const isCurrent = exp.period.includes('Actualidad') || exp.period.includes('Present');
           const isNHL = exp.title.includes('NHL');
+          const isDevDatep = exp.title.includes('DevDatep');
           
           return (
             <article
@@ -35,6 +36,8 @@ function Experience({ locale }: { locale: Locale }) {
                 isCurrent ? 'md:col-span-2 ring-2 ring-cyan-400/50 bg-cyan-400/5' : ''
               } ${
                 isNHL ? 'md:col-span-2' : ''
+              } ${
+                isDevDatep ? 'md:col-span-2' : ''
               }`}
               itemScope
               itemType="https://schema.org/EmployeeRole"
